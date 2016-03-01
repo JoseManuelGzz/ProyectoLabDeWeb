@@ -1,0 +1,25 @@
+.aboutUs {
+  background: url(../images/MusicBG1.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  padding: 150px;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.clasesHorarios {
+  background: url(../images/MusicBG2.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  padding: 150px;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
