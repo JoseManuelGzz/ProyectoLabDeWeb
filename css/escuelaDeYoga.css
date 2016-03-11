@@ -1,5 +1,5 @@
 .aboutUs {
-  background: url(../images/YogaBG1.jpg) no-repeat center center fixed;
+  background: url(../img/YogaBG1.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -12,7 +12,7 @@
 }
 
 .clasesHorarios {
-  background: url(../images/YogaBG2.jpg) no-repeat center center fixed;
+  background: url(../img/YogaBG2.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;

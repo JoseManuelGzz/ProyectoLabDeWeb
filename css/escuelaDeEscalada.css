@@ -1,5 +1,5 @@
 .aboutUs {
-  background: url(../images/ClimbingBG1.jpg) no-repeat center center fixed;
+  background: url(../img/ClimbingBG1.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -12,7 +12,7 @@
 }
 
 .clasesHorarios {
-  background: url(../images/ClimbingBG2.jpg) no-repeat center center fixed;
+  background: url(../img/ClimbingBG2.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;

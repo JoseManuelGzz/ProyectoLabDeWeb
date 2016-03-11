@@ -1,5 +1,5 @@
 .aboutUs {
-  background: url(../images/MusicBG1.jpg) no-repeat center center fixed;
+  background: url(../img/MusicBG1.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
@@ -12,7 +12,7 @@
 }
 
 .clasesHorarios {
-  background: url(../images/MusicBG2.jpg) no-repeat center center fixed;
+  background: url(../img/MusicBG2.jpg) no-repeat center center fixed;
   display: table;
   height: 100%;
   position: relative;
