@@ -1,5 +1,6 @@
 ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
+    left: 0%;
 }
 
 .navbar-default .nav li.dropdown ul a {
@@ -14,8 +15,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   position: relative;
   padding: 20px;
 }
-
-
 
 .video-container {
   position: absolute;
