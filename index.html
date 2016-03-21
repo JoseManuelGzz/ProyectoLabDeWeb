@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/cdp.css" rel="stylesheet">
 
     <!-- Index CSS -->
     <link href="css/index.css" rel="stylesheet">
@@ -81,19 +81,17 @@
     </nav>
 
     <!-- Header -->
-    <div class = "header-container">
-        <div class = "video-container">
-            <video preload = "true" autoplay = "autoplay" loop volume = "0" poster = "img/poster.jpg" muted = "true">
-                <source src = "video/backgroundVideo.mp4" type="video/mp4">
-            </video>
-        </div>
+    <div class = "embed-responsive embed-responsive-16by9">
+        <video class="embed-responsive-item" preload = "true" autoplay = "autoplay" loop volume = "0" poster = "img/poster.jpg" muted = "true">
+            <source src = "video/backgroundVideo.mp4" type="video/mp4">
+        </video>
         <h3 id="videoHeader"> La Casa de Piedra </h3>
         <h3 id="videoInfo"> Espacio Deportivo-Cultural </h3>
     </div>
 
 
     <!-- Seccion de servicios -->
-    <section id="services" class="bg-dark-gray">
+    <section id="servicios" class="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -104,7 +102,7 @@
             <div class="row text-center">
                 <div class="col-md-6">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-book fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Clases</h4>
@@ -112,7 +110,7 @@
                 </div>
                 <div class="col-md-6">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Tienda en l&iacute;nea</h4>
@@ -142,7 +140,7 @@
                         <img src="img/clases/RockClimbing.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="clases-caption">
-                        <h4>Escalada en roca</h4>
+                        <h4>Escalada</h4>
                         <p class="text-muted">Lorem ipsum.</p>
                     </div>
                 </div>
@@ -195,7 +193,7 @@
     </section>
 
     <!-- Seccion del equipo -->
-    <section id="team" class="bg-dark-gray">
+    <section id="team" class="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -341,6 +339,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="js/SmoothScroll.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
