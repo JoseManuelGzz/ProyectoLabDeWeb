@@ -82,6 +82,8 @@
                 <div class="intro-heading">Login/Register</div>
             </div>
         </div>
+
+        <!-- Login -->
         <div class="container">
           <form class="form-login" id="loginForm" data-toggle="validator" role="form">
             <h4 style="color: #000000">Login</h4>
@@ -98,10 +100,41 @@
                 <div class="help-block with-error">Ingresa al menos 5 caracteres.</div>
             </div>
             <div class="form-group">
-              <button class="btn btn-large btn-primary btn-warning" id="signInButton" type="button">Sign in</button>
+              <button class="btn btn-large btn-primary btn-warning" id="signInButton" type="button">Login</button>
             </div>
           </form>
         </div>
+
+        <!-- Register -->
+        <div class="container">
+          <form class="form-register" id="registerForm" data-toggle="validator" role="form">
+            <h4 style="color: #000000;">Registrarme</h4>
+            <h5>Nombre de usuario</h5>
+            <div class="form-group">
+              <label for="inputName" class="control-label"></label>
+              <input type="text" class="form-control" id="fullnameRegister" placeholder="Full name" data-error="Por favor ingresa un nombre de usuario." required>
+              <div class="help-block with-errors">Ingresa tu nombre de usuario.</div>
+            </div>
+            <h5>Email</h5>
+            <div class="form-group">
+              <label for="inputEmail" class="control-label"></label>
+              <input type="email" class="form-control" id="emailRegister" placeholder="Email" data-error="La direcci&oacute;n de email no es v&aacute;lida." required>
+              <div class="help-block with-errors">Ingresa un email v&aacute;lido.</div>
+            </div>
+            <h5>Contraseña</h5>
+            <div class="form-group">
+            	<label for="inputPassword" class="control-label"></label>
+                <input type="password" data-minlength="5" class="form-control" id="passRegister" placeholder="Password" data-error="Ingresa un m&iacute;nimo de 5 caracteres." required>
+                <div class="help-block with-error">Ingresa al menos 5 caracteres.</div>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-large btn-primary btn-danger" id="registerButton" type="button">Registrar</button>
+            </div>
+          </form>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br>
+
     </header>
 
     <footer>

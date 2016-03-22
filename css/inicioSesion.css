@@ -16,7 +16,7 @@ table {
 }
 
 h5 {
-  color: #000000;
+  color: #7a8998;
   position: relative;
   top: 15px;
 }
@@ -31,7 +31,7 @@ h5 {
   padding: 20px 30px 30px;
   margin: 0 auto 20px;
   background-color: #ffffff;
-  border: 1px solid #eaeaea;
+  border: 3px solid #eaeaea;
   border-radius: 5px;
   position: relative;
   bottom: 50px;
@@ -55,5 +55,24 @@ h5 {
   position: relative;
   bottom:1px;
   width: 90px;
+  background-color: #939393;
+}
+
+.form-register {
+  max-width: 300px;
+  max-height: 475px;
+  padding: 20px 30px 30px;
+  margin: 0 auto 20px;
+  background-color: #ffffff;
+  border: 3px solid #eaeaea;
+  border-radius: 5px;
+  position: fixed;
+  top: 245px;
+  right: 600px;
+}
+
+.form-register button {
+  position: relative;
+  width: 120px;
   background-color: #939393;
 }
