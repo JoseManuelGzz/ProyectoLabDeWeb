@@ -18,7 +18,7 @@
     <link href="css/cdp.css" rel="stylesheet">
 
     <!-- Index CSS -->
-    <link href="css/favoritos.css" rel="stylesheet">
+    <link href="css/inicioSesion.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -79,108 +79,30 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in"> </div>
-                <div class="intro-heading">Favoritos</div>
+                <div class="intro-heading">Login/Register</div>
             </div>
         </div>
+        <div class="container">
+          <form class="form-login" id="loginForm" data-toggle="validator" role="form">
+            <h4 style="color: #000000">Login</h4>
+            <h5>Email</h5>
+            <div class="form-group">
+              <label for="inputEmail" class="control-label"></label>
+              <input type="email" class="form-control" id="emailLogin" placeholder="Email" data-error="La direcci&oacute;n de email no es v&aacute;lida." required>
+              <div class="help-block with-errors">Ingresa un email v&aacute;lido.</div>
+            </div>
+            <h5>Contraseña</h5>
+            <div class="form-group">
+              <label for="inputPassword" class="control-label"></label>
+                <input type="password" data-minlength="5" class="form-control" id="passLogin" placeholder="Password" data-error="Ingresa un m&iacute;nimo de 5 caracteres." required>
+                <div class="help-block with-error">Ingresa al menos 5 caracteres.</div>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-large btn-primary btn-warning" id="signInButton" type="button">Sign in</button>
+            </div>
+          </form>
+        </div>
     </header>
-
-    <section id="cart_items">
-      <div class="table-responsive cart_info">
-				<table class="table table-condensed">
-					<thead>
-						<tr class="cart_menu">
-							<td class="image">Item</td>
-							<td class="description"></td>
-							<td class="price">Price</td>
-							<td class="quantity">Quantity</td>
-							<td class="total">Total</td>
-							<td></td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="img/tienda/shark.jpg" alt=""></a>
-							</td>
-							<td class="cart_description">
-								<h4>Shark 2.0</h4>
-								<p>Gatas Mad Rock</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="img/tienda/chaos.jpg" alt=""></a>
-							</td>
-							<td class="cart_description">
-								<h4>Chaos</h4>
-								<p>Arnes</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-						<tr>
-							<td class="cart_product">
-								<a href=""><img src="img/tienda/fusion.jpg" alt=""></a>
-							</td>
-							<td class="cart_description">
-								<h4>Fusion</h4>
-								<p>Cuerda de 10mm</p>
-							</td>
-							<td class="cart_price">
-								<p>$59</p>
-							</td>
-							<td class="cart_quantity">
-								<div class="cart_quantity_button">
-									<a class="cart_quantity_up" href=""> + </a>
-									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
-									<a class="cart_quantity_down" href=""> - </a>
-								</div>
-							</td>
-							<td class="cart_total">
-								<p class="cart_total_price">$59</p>
-							</td>
-							<td class="cart_delete">
-								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-    </section>
-
-
-
 
     <footer>
         <div class="container">
@@ -227,7 +149,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 
-    <!-- Page Javascript -->
+    <!-- Validator JavaScript -->
+    <script src="js/validator.min.js"></script>
 
 </body>
 

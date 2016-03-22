@@ -1,0 +1,59 @@
+.climbingHeader{
+  background-image:url(../img/climbingPoster.jpg);
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+    left: 0%;
+}
+
+section {
+  padding: 100px 100px;
+}
+
+table {
+  margin-bottom: 0px !important;
+}
+
+h5 {
+  color: #000000;
+  position: relative;
+  top: 15px;
+}
+
+.navbar-default .nav li.dropdown ul a {
+  color: #414141;
+}
+
+.form-login {
+  max-width: 300px;
+  max-height: 350px;
+  padding: 20px 30px 30px;
+  margin: 0 auto 20px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  position: relative;
+  bottom: 50px;
+  right: 230px;
+}
+
+.form-login .form-login-heading,
+.form-register .form-login-register {
+  margin-bottom: 10px;
+}
+
+.form-login input[type="email"], .form-login input[type="password"],
+.form-register input[type="text"], .form-register input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 3px;
+  padding: 7px 9px;
+}
+
+.form-login button {
+  position: relative;
+  bottom:1px;
+  width: 90px;
+  background-color: #939393;
+}
