@@ -66,9 +66,9 @@ h5 {
   background-color: #ffffff;
   border: 3px solid #eaeaea;
   border-radius: 5px;
-  position: fixed;
+  position: absolute;
   top: 245px;
-  right: 600px;
+  right: 300px;
 }
 
 .form-register button {
