@@ -10,3 +10,24 @@
 .musicHeader{
   background-image:url(../img/musicPoster.jpg);
 }
+
+#aboutus img {
+    float: none;
+    margin: 0 auto;
+    position: relative;
+    display: table;
+    max-width: 100%;
+    max-height: 150px;
+    margin-bottom: 15px;
+}
+
+.row .about-text {
+    float: none;
+    margin: auto 0;
+    position: relative;
+    display: table;
+}
+
+section .section-heading {
+    margin-bottom: 0 !important;
+}
