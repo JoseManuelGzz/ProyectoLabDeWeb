@@ -77,7 +77,11 @@ h1,h2,h3,h4,h5,h6 {
   color:#fff;
   font-family:Montserrat,"Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active { color:#636363 }
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
+  color:#fff;
+  background-color:rgba(34, 34, 34, 0.2);
+  border: 3px solid #fff;
+}
 .navbar-default .navbar-collapse{ border-color:rgba(255,255,255,.02) }
 .navbar-default .navbar-toggle {
   background-color:#636363;
@@ -92,14 +96,20 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing:1px;
   color:#fff;
 }
-.navbar-default .nav li a:hover,.navbar-default .nav li a:focus {color:#636363; outline:0 }
+.navbar-default .nav li a:hover,.navbar-default .nav li a:focus {
+  border: 3px solid #fff;
+  color:#fff;
+  outline:0
+}
 .navbar-default .navbar-nav>.active>a {
   border-radius:0;
   color:#fff;
-  background-color:#636363
+  background-color:rgba(34, 34, 34, 0.2);
+  border: 3px solid #fff;
 }
 .navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{
-  color:#fff;background-color:#636363
+  color:#fff;
+  background-color:rgba(34, 34, 34, 0.2);
 }
 @media (min-width:768px){
   .navbar-default {
