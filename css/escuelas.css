@@ -11,6 +11,11 @@
   background-image:url(../img/musicPoster.jpg);
 }
 
+#clases {
+  margin-bottom: 0px;
+}
+
+/*
 #aboutus img {
     float: none;
     margin: 0 auto;
@@ -19,6 +24,12 @@
     max-width: 100%;
     max-height: 150px;
     margin-bottom: 15px;
+}
+*/
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
 }
 
 .row .about-text {
@@ -30,4 +41,44 @@
 
 section .section-heading {
     margin-bottom: 0 !important;
+}
+
+
+.carousel-indicators li {
+  background: #C4C4BE;
+  border-color: #C4C4BE;
+}
+
+.carousel-indicators li.active {
+	  background: #99c5ff;
+    border-color: #99c5ff;
+}
+
+
+.item {
+  padding: 0px 50px 0px 50px;
+}
+
+.control-carousel {
+  position: absolute;
+  top: 50%;
+  font-size: 60px;
+  color: #C2C2C1;
+}
+
+.control-carousel:hover{
+  color: #636363 ;
+}
+
+.right {
+  right: 0;
+}
+
+.carousel-inner {
+
+}
+
+.carousel-inner img {
+  max-height: 400px;
+  margin: auto;
 }
