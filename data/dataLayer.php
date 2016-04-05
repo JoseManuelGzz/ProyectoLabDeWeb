@@ -56,16 +56,16 @@
     }
   }
 
-    function startSession($fname, $lname, $email) {
-	    session_start();
-	    if (!isset($_SESSION['firstName'])) {
-	    	$_SESSION['fname'] = $fname;
-	    }
-	    if (!isset($_SESSION['lastName'])) {
-	    	$_SESSION['lname'] = $lname;
-	    }
-	    if (!isset($_SESSION['email'])) {
-	    	$_SESSION['email'] = $email;
-	    }
+  function startSession($fname, $lname, $email) {
+    session_start();
+    if (!isset($_SESSION['firstName'])) {
+    	$_SESSION['fname'] = $fname;
     }
+    if (!isset($_SESSION['lastName'])) {
+    	$_SESSION['lname'] = $lname;
+    }
+    if (!isset($_SESSION['email'])) {
+    	$_SESSION['email'] = $email;
+    }
+  }
 ?>
