@@ -5,9 +5,9 @@
   $action = $_POST['action'];
 
   switch($action) {
-    case 'LOGIN': loginAction();
+    case 'LOGIN': loginUser();
           break;
-    case 'REGISTER': registerAction();
+    case 'REGISTER': registerUser();
           break;
   }
 
@@ -27,7 +27,7 @@
 				$response = array('status' => 'COMPLETE', 'username' => $result['username']);
 
 				# Start the session
-				startSession($email, $result['username']);
+				#startSession($email, $result['username']);
 
 				echo json_encode($response);
 			}
@@ -59,7 +59,7 @@
 			if ($result['status'] == 'COMPLETE') {
 
 				# Start the session
-				startSession($email, $username);
+				#startSession($email, $username);
 
 				echo json_encode($result);
 			}
