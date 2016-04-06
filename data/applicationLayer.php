@@ -60,7 +60,7 @@
 			if ($result['status'] == 'COMPLETE') {
 
 				# Start the session
-				startSession($email, $username);
+				startSession($email, $fName . $lName);
 
 				echo json_encode($result);
 			}

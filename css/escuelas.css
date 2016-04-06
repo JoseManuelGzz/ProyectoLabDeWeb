@@ -61,7 +61,7 @@ section .section-heading {
 
 .control-carousel {
   position: absolute;
-  top: 50%;
+  top: 40%;
   font-size: 60px;
   color: #C2C2C1;
 }
@@ -81,4 +81,13 @@ section .section-heading {
 .carousel-inner img {
   max-height: 400px;
   margin: auto;
+}
+
+@media (min-width:992px){
+  .control-carousel.left {
+    margin-left: 100px;
+  }
+
+  .control-carousel.right {
+    margin-right: 100px;
 }
