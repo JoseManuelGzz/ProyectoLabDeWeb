@@ -11,48 +11,158 @@
           break;
   }
 
-  function loginAction() {
+  # Action to login the current user credentials and redirect it to home.html
+	function loginUser() {
 		$email = $_POST['email'];
-		$pass = $_POST['password'];
+		$password = $_POST['password'];
 
-		$result = login($email);
+		# Verify if the user currently exists in the Database
+		$result = validateCredentials($email);
 
-		if($result['message'] == 'OK') {
-	    $key = pack('H*', "bcb04b7e103a05afe34763051cef08bc55abe029fdebae5e1d417e2ffb2a00a3");
+		if($result['status'] == 'COMPLETE') {
+			$decryptedPassword = decryptPassword($result['password']);
+
+			# Compare the decrypted password with the one provided by the user
+			if($decryptedPassword === $password) {
+				$response = array('status' => 'COMPLETE', 'username' => $result['username']);
+
+				# Start the session
+				startSession($email, $result['username']);
+
+				echo json_encode($response);
+			}
+			else {
+				die(json_encode(errors(206)));
+			}
+		}
+		else {
+			die(json_encode($result));
+		}
+	}
+
+	# Action to register a user
+	function registerUser() {
+		$email = $_POST['email'];
+
+		# Verify that the user doesn't exist in the database
+		$result = userInDatabase($email);
+
+		if ($result['status'] == 'COMPLETE') {
+			$fName = $_POST['fName'];
+            $lName = $_POST['lName'];
+
+			$password = encryptPassword();
+
+			# Make the insertion of the new user to the Database
+			$result = registerNewUser($email, $fName, $lName, $password);
+
+			# Verify that the insertion was successful
+			if ($result['status'] == 'COMPLETE') {
+
+				# Start the session
+				startSession($email, $username);
+
+				echo json_encode($result);
+			}
+			else
+			{
+				# Something went wrong while inserting the new user
+				die(json_encode($result));
+			}
+		}
+		else
+		{
+			# Username already exists
+			die(json_encode($result));
+		}
+	}
+    
+    # Action to encrypt the password of the user
+	function encryptPassword() {
+		$userPassword = $_POST['password'];
+
+	    $key = "bcb04b7e103a0cd8b5476305";
+
+	    $key_size =  strlen($key);
+	    
+	    $plaintext = $userPassword;
 
 	    $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
 	    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+	    
+	    $ciphertext = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $plaintext, MCRYPT_MODE_CBC, $iv);
+	    $ciphertext = $iv . $ciphertext;
+	    
+	    $userPassword = base64_encode($ciphertext);
 
-    	# --- DECRYPTION ---
-	    $ciphertext_dec = base64_decode($result['password']);
+	    return $userPassword;
+	}
+
+	# Action to decrypt the password of the user
+	function decryptPassword($password) {
+		
+		$key = "bcb04b7e103a0cd8b5476305";
+
+	    $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
+	    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+    	
+	    $ciphertext_dec = base64_decode($password);
 	    $iv_dec = substr($ciphertext_dec, 0, $iv_size);
 	    $ciphertext_dec = substr($ciphertext_dec, $iv_size);
-	    $plaintext_dec = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key, $ciphertext_dec, MCRYPT_MODE_CBC, $iv_dec);
+
+	    $password = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key, $ciphertext_dec, MCRYPT_MODE_CBC, $iv_dec);
 
 	   	$count = 0;
-	   	$length = strlen($plaintext_dec);
+	   	$length = strlen($password);
 
-	    for($i = $length - 1; $i >= 0; $i --) {
-	    	if(ord($plaintext_dec{$i}) === 0) {
+	    for ($i = $length - 1; $i >= 0; $i --) {
+	    	if (ord($password{$i}) === 0) {
 	    		$count ++;
 	    	}
 	    }
 
-	    $plaintext_dec = substr($plaintext_dec, 0,  $length - $count);
+	    $password = substr($password, 0,  $length - $count);
+	    
+	    return $password;
+	}
+    
+    # Action to set the cookies
+	function cookieSet() {
+		$email = $_POST["email"];
+		setcookie("email", $email, time() + 3600*24*60);
+		echo json_encode(array("status" => "COMPLETE"));
+	}
 
-		  if($plaintext_dec === $pass) {
-		    	$response = array('fname' => $result['fname'], 'lname' => $result['lname']);
-			    # Starting the sesion (At the server)
-		    	startSession($result['fname'], $result['lname'], $result['email']);
-			    # Setting the cookies
-				  setcookie("cookieUsername", $result['email']);
-			    echo json_encode($response);
-			} else {
-				die(json_encode(errors(206)));
-			}
-		} else {
-			header($result['header']);
-			die(json_encode($result));
+	# Action to get the current cookies if they exist
+	function cookieGet()
+	{
+		if (isset($_COOKIE['email']))
+		{
+			echo json_encode(array('email' => $_COOKIE['email']));   	    
+		}
+		else
+		{
+			# Cookie not set yet
+		    die(json_encode(errors(417)));
 		}
 	}
+
+	# Action to set the initial values of the session
+	function startSession($email, $username) {
+		// Starting the session
+	    session_start();
+		$_SESSION['email'] = $email;
+	    $_SESSION['username'] = $username;
+    }
+
+    # Action to get the current session data
+    function getSession() {
+    	session_start();
+    	if (isset($_SESSION['email']) && $_SESSION['username']) {
+    		echo json_encode(array("email" => $_SESSION['email'], "username" => $_SESSION['username']));
+    	}
+    	else {
+    		echo json_encode(errors(417));
+    	}
+    }
 ?>
