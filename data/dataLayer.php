@@ -42,7 +42,7 @@
     	$conn = connect();
 
         if ($conn != null) {
-        	$sql = "SELECT Fname, Lname, Password FROM Users WHERE Email = '$email'";
+        	$sql = "SELECT Username, Password FROM Users WHERE Email = '$email'";
 			$result = $conn->query($sql);
 			
 			# If the current user exists
@@ -50,7 +50,7 @@
 				$row = $result -> fetch_assoc();
 				$conn -> close();
 
-				return array("status" => "COMPLETE", "username" => $row['Fname'] . $row['Lname'], "password" => $row['Password']);
+				return array("status" => "COMPLETE", "username" => $row['Username'], "password" => $row['Password']);
 			}
 			else {
 				# The user doesn't exists in the Database
@@ -92,13 +92,13 @@
     }
 
     # Query to insert a new user to the Database
-    function registerNewUser($email, $fName, $lName, $password) {
+    function registerNewUser($email, $username, $password) {
     	# Open and validate the Database connection
     	$conn = connect();
 
         if ($conn != null)
         {
-        	$sql = "INSERT INTO User(Email, Fname, Lname, Password) VALUES ('$email', '$fName', '$lName', '$password')";		
+        	$sql = "INSERT INTO User(Email, Username, Password) VALUES ('$email', '$username', '$password')";		
 			if (mysqli_query($conn, $sql)) 
 	    	{
 	    		$conn->close();

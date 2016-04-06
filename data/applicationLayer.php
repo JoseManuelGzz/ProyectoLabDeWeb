@@ -48,19 +48,18 @@
 		$result = userInDatabase($email);
 
 		if ($result['status'] == 'COMPLETE') {
-			$fName = $_POST['fName'];
-            $lName = $_POST['lName'];
+			$username = $_POST['username'];
 
 			$password = encryptPassword();
 
 			# Make the insertion of the new user to the Database
-			$result = registerNewUser($email, $fName, $lName, $password);
+			$result = registerNewUser($email, $username, $password);
 
 			# Verify that the insertion was successful
 			if ($result['status'] == 'COMPLETE') {
 
 				# Start the session
-				startSession($email, $fName . $lName);
+				startSession($email, $username);
 
 				echo json_encode($result);
 			}
