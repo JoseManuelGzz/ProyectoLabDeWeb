@@ -20,7 +20,7 @@
 		switch($type) {
 			case 500:	$header .= "500 Bad connection to Database";
 						break;
-			case 206:	$header .= "206 Wrong Credentials";
+			case 306:	$header .= "306 Wrong Credentials";
 						break;
 			case 406:	$header .= "406 User Not Found";
 						break;
@@ -98,7 +98,7 @@
 
         if ($conn != null)
         {
-        	$sql = "INSERT INTO User(Email, Username, Password) VALUES ('$email', '$username', '$password')";		
+        	$sql = "INSERT INTO Users(Email, Username, Password) VALUES ('$email', '$username', '$password')";		
 			if (mysqli_query($conn, $sql)) 
 	    	{
 	    		$conn->close();

@@ -32,7 +32,7 @@
 				echo json_encode($response);
 			}
 			else {
-				die(json_encode(errors(206)));
+				die(json_encode(errors(306)));
 			}
 		}
 		else {

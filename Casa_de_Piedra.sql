@@ -52,8 +52,7 @@ CREATE TABLE `Products` (
 --
 
 CREATE TABLE `Users` (
-  `fname` varchar(50) NOT NULL,
-  `lname` varchar(50) NOT NULL,
+  `username` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
