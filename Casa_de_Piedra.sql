@@ -6,6 +6,9 @@
 -- Generation Time: Apr 01, 2016 at 03:53 PM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
+CREATE DATABASE Casa_de_Piedra;
+USE Casa_De_Piedra;
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -97,3 +100,8 @@ ALTER TABLE `Products`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+INSERT INTO `Products` VALUES (1, 1550.00, "SC Bandit ofrece la versatilidad de la Bandit con la conveniencia de un sistema de cierre de velcro. La doble capa superior sintética proporciona una gran comodidad y rendimiento.", "http://www.vertimania.com/images/P/BANDIT%20SC%20440.jpg", "EVOLV BANDIT SC");
+INSERT INTO `Products` VALUES (2, 1719.83, "El último diseño de Chris Sharma, el Luchador es un modelo ideal para escaladores de un nivel alto e intermedio que les guste todo tipo de escalada el Luchador SC esta inspirado por el luchador interior de todos nosotros que luchan en medio de la roca; se amoldan perfecto a tu pie gracias al nuevo diseño de lengüeta que se acopla fácilmente a tu morfología. Recomendado para todo tipo de rutas deportivas (All Around) por ser una zapatilla técnica pero muy cómoda, con un perfil puntera semi-asimétrica que permite un gran control en los bordes pequeños, así como grietas finas.", "http://www.vertimania.com/images/P/luchadorsc400.jpg", "Evolv Luchador");
+INSERT INTO `Products` VALUES (3, 1032.76, "Con una talla única para todos, diseño simple, el Vario Speed es una gran opción para las escuelas de guía, gimnasios y programas de rock al aire libre.", "http://www.vertimania.com/images/P/Vario%20speed%20440%20.jpg", "BD VARIO SPEED");
+INSERT INTO `Products` VALUES (4, 2090.52, "Para los que prefieren un arnés completo para protegerse de las caídas.  diseñado para cualquier tipo de actividadnvertical, se suele utilizar para alpinismo. ", "http://www.vertimania.com/images/P/C05-N%20440.jpg", "Petzl 8003");
+INSERT INTO `Products` VALUES (5, 1032.76, "Hecho para ser increíblemente fuerte, ligero y combinar la función de descensor con asegurador dependiendo si utilizas el orificio ancho o angosto.", "http://www.vertimania.com/images/P/super-8-440.jpg", "Black Diamond Super 8");
