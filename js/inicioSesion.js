@@ -84,6 +84,7 @@ $(document).ready(function() {
 				headers: {"Content-Type": "application/x-www-form-urlencoded"},
 				success: function() {
 					alert("Welcome " + username + "!");
+					window.location.replace('tienda.html');
 				},
 				error: function(errorMsg) {
 					alert(errorMsg.statusText);
