@@ -42,7 +42,8 @@ CREATE TABLE `Products` (
   `id` int(11) NOT NULL,
   `price` float NOT NULL,
   `description` text NOT NULL,
-  `image_url` text NOT NULL
+  `image_url` text NOT NULL,
+  `name` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
