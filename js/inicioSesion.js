@@ -16,20 +16,21 @@ $(document).ready(function() {
 			headers: {"Content-Type": "application/x-www-form-urlencoded"},
 			success: function(jsonData) {
 				alert("Welcome " + jsonData.username + "!");
+				window.location.replace('tienda.html');
 			},
 			error: function(errorMsg) {
 				alert(errorMsg.statusText);
 			}
 		});
     });
-        
+
         // Function when the register button is clicked.
 	$("#registerButton").on("click", function() {
 		// Definition of variables.
 		var isEmail = true;
 		var usernameExists = true;
 		var goodPassword = true;
-        
+
 		// Validation for email.
 		var email = $("#emailRegister").val();
 		var emailLength = email.length;
@@ -90,5 +91,5 @@ $(document).ready(function() {
 			});
 		}
 	});
-    
+
 });
