@@ -197,3 +197,14 @@ INSERT INTO `Products` VALUES (72, 250.00, "Hecho para ser increíblemente fuert
 /*INSERTS PARA PRODUCTOS DE CATEGORIA GUANTES*/
 INSERT INTO `Products` VALUES (73, 485.00, "Hecho para ser increíblemente fuerte, ligero y combinar la función de descensor con asegurador dependiendo si utilizas el orificio ancho o angosto.", "Guantes", "http://www.vertimania.com/images/P/super-8-440.jpg", "Guantes Crag Slove");
 INSERT INTO `Products` VALUES (74, 999.00, "Hecho para ser increíblemente fuerte, ligero y combinar la función de descensor con asegurador dependiendo si utilizas el orificio ancho o angosto.", "Guantes", "http://www.vertimania.com/images/P/super-8-440.jpg", "Stone");
+
+/*INSERTS PARA PRODUCTOS DE CATEGORIA CUERDAS*/
+INSERT INTO `Products` VALUES (75, 999.00, "Hecho para ser increíblemente fuerte, ligero y combinar la función de descensor con asegurador dependiendo si utilizas el orificio ancho o angosto.", "Cuerdas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Marathon Pro x70m");
+INSERT INTO `Products` VALUES (76, 999.00, "Hecho para ser increíblemente fuerte, ligero y combinar la función de descensor con asegurador dependiendo si utilizas el orificio ancho o angosto.", "Cuerdas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Ev Velocity x70m");
+INSERT INTO `Products` VALUES (77, 999.00, "Hecho para ser increíblemente fuerte, ligero y combinar la función de descensor con asegurador dependiendo si utilizas el orificio ancho o angosto.", "Cuerdas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Canyontech x61m");
+
+/*INSERTS PARA PRODUCTOS DE CATEGORIA MOCHILAS*/
+INSERT INTO `Products` VALUES (77, 999.00, "Hecho para ser increíblemente fuerte, ligero y combinar la función de descensor con asegurador dependiendo si utilizas el orificio ancho o angosto.", "Mochilas", "http://www.vertimania.com/images/P/super-8-440.jpg", "ONYX 65");
+INSERT INTO `Products` VALUES (78, 999.00, "Hecho para ser increíblemente fuerte, ligero y combinar la función de descensor con asegurador dependiendo si utilizas el orificio ancho o angosto.", "Mochilas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Mercury 55");
+INSERT INTO `Products` VALUES (79, 970.00, "Hecho para ser increíblemente fuerte, ligero y combinar la función de descensor con asegurador dependiendo si utilizas el orificio ancho o angosto.", "Mochilas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Superchute");
+INSERT INTO `Products` VALUES (80, 1598.00, "Hecho para ser increíblemente fuerte, ligero y combinar la función de descensor con asegurador dependiendo si utilizas el orificio ancho o angosto.", "Mochilas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Stone 42 Duffel");
