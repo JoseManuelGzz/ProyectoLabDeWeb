@@ -109,35 +109,35 @@ INSERT INTO `Products` VALUES (4, 800.00, "Gatas", "http://www.vertimania.com/im
 INSERT INTO `Products` VALUES (5, 800.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Demon");
 INSERT INTO `Products` VALUES (6, 800.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Frenzy Velcro");
 INSERT INTO `Products` VALUES (7, 800.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Mugen Tech Lance");
-INSERT INTO `Products` VALUES (8, 1350.00, "Gatas", "https://www.dropbox.com/s/lshrecrz01a0m6f/30-0-Drifter.JPG?dl=0", "Drifter");
-INSERT INTO `Products` VALUES (9, 1700.00, "Gatas", "https://www.dropbox.com/s/gtkgap9wu6g08sq/29-2-M5.JPG?dl=0", "M5");
-INSERT INTO `Products` VALUES (10, 2298.00, "Gatas", "https://www.dropbox.com/s/61vxq3o18cz2m0u/481-0-RedLine.JPG?dl=0", "RedLine");
-INSERT INTO `Products` VALUES (11, 1950.00, "Gatas", "https://www.dropbox.com/s/z4324wd99htl29t/18-0-prod-1.JPG?dl=0", "Shark 2.0");
-INSERT INTO `Products` VALUES (12, 1950.00, "Gatas", "https://www.dropbox.com/s/iffmenf54z9c5np/378-0-Lotus.JPG?dl=0", "Lotus");
-INSERT INTO `Products` VALUES (13, 1850.00, "Gatas", "https://www.dropbox.com/s/yxhcsbida5gnx85/379-0-Lyra.JPG?dl=0", "Lyra");
-INSERT INTO `Products` VALUES (14, 950.00, "Gatas", "https://www.dropbox.com/s/gsizw37moc04l2u/203-0-Mad-Monkey-2-0.JPG?dl=0", "Mad Monkey");
-INSERT INTO `Products` VALUES (15, 1598.00, "Gatas", "https://www.dropbox.com/s/3eq2ftmw28z8f2f/28-0-Flash-2.0.JPG?dl=0", "Flash 2.0");
-INSERT INTO `Products` VALUES (16, 1598.00, "Gatas", "https://www.dropbox.com/s/gy6v85zu6gljb66/480-0-Flash-2-0-amarillo.JPG?dl=0", "Flash Yellow");
-INSERT INTO `Products` VALUES (17, 1698.00, "Gatas", "https://www.dropbox.com/s/5d6txmoo6fmxxnx/578-0-Pulse-Positive.JPG?dl=0", "Pulse Positive");
-INSERT INTO `Products` VALUES (18, 1698.00, "Gatas", "https://www.dropbox.com/s/iwb6m29kdx3f6nf/577-0-Pulse-Negative.JPG?dl=0", "Pulse Negative");
+INSERT INTO `Products` VALUES (8, 1350.00, "Gatas", "http://exposure.mx/images/productos/30-0-Drifter.JPG", "Drifter");
+INSERT INTO `Products` VALUES (9, 1700.00, "Gatas", "http://exposure.mx/images/productos/29-2-M5.JPG", "M5");
+INSERT INTO `Products` VALUES (10, 2298.00, "Gatas", "http://exposure.mx/images/productos/481-0-RedLine.JPG", "RedLine");
+INSERT INTO `Products` VALUES (11, 1950.00, "Gatas", "http://exposure.mx/images/productos/18-0-prod-1.JPG", "Shark 2.0");
+INSERT INTO `Products` VALUES (12, 1950.00, "Gatas", "http://exposure.mx/images/productos/378-0-Lotus.JPG", "Lotus");
+INSERT INTO `Products` VALUES (13, 1850.00, "Gatas", "http://exposure.mx/images/productos/379-0-Lyra.JPG", "Lyra");
+INSERT INTO `Products` VALUES (14, 950.00, "Gatas", "http://exposure.mx/images/productos/203-0-Mad-Monkey-2-0.JPG", "Mad Monkey");
+INSERT INTO `Products` VALUES (15, 1598.00, "Gatas", "http://exposure.mx/images/productos/28-0-Flash-2.0.JPG", "Flash 2.0");
+INSERT INTO `Products` VALUES (16, 1598.00, "Gatas", "http://exposure.mx/images/productos/480-0-Flash-2-0-amarillo.JPG", "Flash Yellow");
+INSERT INTO `Products` VALUES (17, 1698.00, "Gatas", "http://exposure.mx/images/productos/578-0-Pulse-Positive.JPG", "Pulse Positive");
+INSERT INTO `Products` VALUES (18, 1698.00, "Gatas", "http://exposure.mx/images/productos/577-0-Pulse-Negative.JPG", "Pulse Negative");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MAGNESIERAS*/
-INSERT INTO `Products` VALUES (19, 265.00, "Magnesieras", "https://www.dropbox.com/s/99n15jmaxln265q/75-0-Mojo-Chalkbag.JPG?dl=0", "Magnesiera Mojo Chalk Bag");
-INSERT INTO `Products` VALUES (20, 178.00, "Magnesieras", "https://www.dropbox.com/s/vhy8kqbbpdp0m9g/208-0-Koala.JPG?dl=0", "Koala");
-INSERT INTO `Products` VALUES (21, 298.00, "Magnesieras", "https://www.dropbox.com/s/lfof3x6r8ang7pw/77-0-Mojo-Repo-Chalkbag.JPG?dl=0", "Mojo Repo Chalk Bag");
-INSERT INTO `Products` VALUES (22, 320.00, "Magnesieras", "https://www.dropbox.com/s/x19hckyr560sqek/76-0-Mojo-Zip-Chalkbag.JPG?dl=0", "Mojo Zip Chalk Bag");
-INSERT INTO `Products` VALUES (23, 168.00, "Magnesieras", "https://www.dropbox.com/s/npwupa31bdhjqw1/210-0-Kids-Chalk-Bag.JPG?dl=0", "Kids Chalk Bag");
-INSERT INTO `Products` VALUES (24, 198.00, "Magnesieras", "https://www.dropbox.com/s/j1j28082gfov32y/209-0-Kangaroo.JPG?dl=0", "Kangaroo Zip Chalk");
+INSERT INTO `Products` VALUES (19, 265.00, "Magnesieras", "http://exposure.mx/images/productos/75-0-Mojo-Chalkbag.JPG", "Magnesiera Mojo Chalk Bag");
+INSERT INTO `Products` VALUES (20, 178.00, "Magnesieras", "http://exposure.mx/images/productos/208-0-Koala.JPG", "Koala");
+INSERT INTO `Products` VALUES (21, 298.00, "Magnesieras", "http://exposure.mx/images/productos/77-0-Mojo-Repo-Chalkbag.JPG", "Mojo Repo Chalk Bag");
+INSERT INTO `Products` VALUES (22, 320.00, "Magnesieras", "http://exposure.mx/images/productos/76-0-Mojo-Zip-Chalkbag.JPG", "Mojo Zip Chalk Bag");
+INSERT INTO `Products` VALUES (23, 168.00, "Magnesieras", "http://exposure.mx/images/productos/210-0-Kids-Chalk-Bag.JPG", "Kids Chalk Bag");
+INSERT INTO `Products` VALUES (24, 198.00, "Magnesieras", "http://exposure.mx/images/productos/209-0-Kangaroo.JPG", "Kangaroo Zip Chalk");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MAGNESIA*/
-INSERT INTO `Products` VALUES (25, 40.00, "Magnesia", "https://www.dropbox.com/s/hqck16evj6m2jys/545-0-Chalk-Shot.JPG?dl=0", "Bolas de Magnesia");
+INSERT INTO `Products` VALUES (25, 40.00, "Magnesia", "http://exposure.mx/images/productos/545-0-Chalk-Shot.JPG", "Bolas de Magnesia");
 INSERT INTO `Products` VALUES (26, 86.00, "Magnesia", "http://www.vertimania.com/images/P/super-8-440.jpg", "Monkey Hands");
-INSERT INTO `Products` VALUES (27, 45.00, "Magnesia", "https://www.dropbox.com/s/sfurlqk21aavao9/227-0-White-Gold-Chalk-Block.JPG?dl=0", "Cuadro de Magnesia");
-INSERT INTO `Products` VALUES (28, 60.00, "Magnesia", "https://www.dropbox.com/s/oica5b7znhgxzid/228-0-12-Ball-Jar.JPG?dl=0", "Frasco Grande");
-INSERT INTO `Products` VALUES (29, 40.00, "Magnesia", "https://www.dropbox.com/s/oica5b7znhgxzid/228-0-12-Ball-Jar.JPG?dl=0", "Frasco Chico");
-INSERT INTO `Products` VALUES (30, 145.00, "Magnesia", "https://www.dropbox.com/s/8w8fsxoe90p7cg5/225-0-White-Gold-100200300-gr-.JPG?dl=0", "Magnesia en Bolsa 200g");
-INSERT INTO `Products` VALUES (31, 85.00, "Magnesia", "https://www.dropbox.com/s/8w8fsxoe90p7cg5/225-0-White-Gold-100200300-gr-.JPG?dl=0", "Magnesia en Bolsa 100g");
-INSERT INTO `Products` VALUES (32, 215.00, "Magnesia", "https://www.dropbox.com/s/8w8fsxoe90p7cg5/225-0-White-Gold-100200300-gr-.JPG?dl=0", "Magnesia en Bolsa 300g");
+INSERT INTO `Products` VALUES (27, 45.00, "Magnesia", "http://exposure.mx/images/productos/227-0-White-Gold-Chalk-Block.JPG", "Cuadro de Magnesia");
+INSERT INTO `Products` VALUES (28, 60.00, "Magnesia", "http://exposure.mx/images/productos/228-0-12-Ball-Jar.JPG", "Frasco Grande");
+INSERT INTO `Products` VALUES (29, 40.00, "Magnesia", "http://exposure.mx/images/productos/228-0-12-Ball-Jar.JPG", "Frasco Chico");
+INSERT INTO `Products` VALUES (30, 145.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "Magnesia en Bolsa 200g");
+INSERT INTO `Products` VALUES (31, 85.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "Magnesia en Bolsa 100g");
+INSERT INTO `Products` VALUES (32, 215.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "Magnesia en Bolsa 300g");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA CINTAS*/
 INSERT INTO `Products` VALUES (33, 60.00, "Cintas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Cinta Blanca Grande");
