@@ -122,22 +122,22 @@ INSERT INTO `Products` VALUES (17, 1698.00, "Gatas", "https://www.dropbox.com/s/
 INSERT INTO `Products` VALUES (18, 1698.00, "Gatas", "https://www.dropbox.com/s/iwb6m29kdx3f6nf/577-0-Pulse-Negative.JPG?dl=0", "Pulse Negative");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MAGNESIERAS*/
-INSERT INTO `Products` VALUES (19, 265.00, "Magnesieras", "http://www.vertimania.com/images/P/super-8-440.jpg", "Magnesiera Mojo Chalk Bag");
-INSERT INTO `Products` VALUES (20, 178.00, "Magnesieras", "http://www.vertimania.com/images/P/super-8-440.jpg", "Koala");
-INSERT INTO `Products` VALUES (21, 298.00, "Magnesieras", "http://www.vertimania.com/images/P/super-8-440.jpg", "Mojo Repo Chalk Bag");
-INSERT INTO `Products` VALUES (22, 320.00, "Magnesieras", "http://www.vertimania.com/images/P/super-8-440.jpg", "Mojo Zip Chalk Bag");
-INSERT INTO `Products` VALUES (23, 168.00, "Magnesieras", "http://www.vertimania.com/images/P/super-8-440.jpg", "Kids Chalk Bag");
-INSERT INTO `Products` VALUES (24, 198.00, "Magnesieras", "http://www.vertimania.com/images/P/super-8-440.jpg", "Kangaroo Zip Chalk");
+INSERT INTO `Products` VALUES (19, 265.00, "Magnesieras", "https://www.dropbox.com/s/99n15jmaxln265q/75-0-Mojo-Chalkbag.JPG?dl=0", "Magnesiera Mojo Chalk Bag");
+INSERT INTO `Products` VALUES (20, 178.00, "Magnesieras", "https://www.dropbox.com/s/vhy8kqbbpdp0m9g/208-0-Koala.JPG?dl=0", "Koala");
+INSERT INTO `Products` VALUES (21, 298.00, "Magnesieras", "https://www.dropbox.com/s/lfof3x6r8ang7pw/77-0-Mojo-Repo-Chalkbag.JPG?dl=0", "Mojo Repo Chalk Bag");
+INSERT INTO `Products` VALUES (22, 320.00, "Magnesieras", "https://www.dropbox.com/s/x19hckyr560sqek/76-0-Mojo-Zip-Chalkbag.JPG?dl=0", "Mojo Zip Chalk Bag");
+INSERT INTO `Products` VALUES (23, 168.00, "Magnesieras", "https://www.dropbox.com/s/npwupa31bdhjqw1/210-0-Kids-Chalk-Bag.JPG?dl=0", "Kids Chalk Bag");
+INSERT INTO `Products` VALUES (24, 198.00, "Magnesieras", "https://www.dropbox.com/s/j1j28082gfov32y/209-0-Kangaroo.JPG?dl=0", "Kangaroo Zip Chalk");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MAGNESIA*/
-INSERT INTO `Products` VALUES (25, 40.00, "Magnesia", "http://www.vertimania.com/images/P/super-8-440.jpg", "Bolas de Magnesia");
+INSERT INTO `Products` VALUES (25, 40.00, "Magnesia", "https://www.dropbox.com/s/hqck16evj6m2jys/545-0-Chalk-Shot.JPG?dl=0", "Bolas de Magnesia");
 INSERT INTO `Products` VALUES (26, 86.00, "Magnesia", "http://www.vertimania.com/images/P/super-8-440.jpg", "Monkey Hands");
-INSERT INTO `Products` VALUES (27, 45.00, "Magnesia", "http://www.vertimania.com/images/P/super-8-440.jpg", "Cuadro de Magnesia");
-INSERT INTO `Products` VALUES (28, 60.00, "Magnesia", "http://www.vertimania.com/images/P/super-8-440.jpg", "Frasco Grande");
-INSERT INTO `Products` VALUES (29, 40.00, "Magnesia", "http://www.vertimania.com/images/P/super-8-440.jpg", "Frasco Chico");
-INSERT INTO `Products` VALUES (30, 145.00, "Magnesia", "http://www.vertimania.com/images/P/super-8-440.jpg", "Magnesia en Bolsa 200g");
-INSERT INTO `Products` VALUES (31, 85.00, "Magnesia", "http://www.vertimania.com/images/P/super-8-440.jpg", "Magnesia en Bolsa 100g");
-INSERT INTO `Products` VALUES (32, 215.00, "Magnesia", "http://www.vertimania.com/images/P/super-8-440.jpg", "Magnesia en Bolsa 300g");
+INSERT INTO `Products` VALUES (27, 45.00, "Magnesia", "https://www.dropbox.com/s/sfurlqk21aavao9/227-0-White-Gold-Chalk-Block.JPG?dl=0", "Cuadro de Magnesia");
+INSERT INTO `Products` VALUES (28, 60.00, "Magnesia", "https://www.dropbox.com/s/oica5b7znhgxzid/228-0-12-Ball-Jar.JPG?dl=0", "Frasco Grande");
+INSERT INTO `Products` VALUES (29, 40.00, "Magnesia", "https://www.dropbox.com/s/oica5b7znhgxzid/228-0-12-Ball-Jar.JPG?dl=0", "Frasco Chico");
+INSERT INTO `Products` VALUES (30, 145.00, "Magnesia", "https://www.dropbox.com/s/8w8fsxoe90p7cg5/225-0-White-Gold-100200300-gr-.JPG?dl=0", "Magnesia en Bolsa 200g");
+INSERT INTO `Products` VALUES (31, 85.00, "Magnesia", "https://www.dropbox.com/s/8w8fsxoe90p7cg5/225-0-White-Gold-100200300-gr-.JPG?dl=0", "Magnesia en Bolsa 100g");
+INSERT INTO `Products` VALUES (32, 215.00, "Magnesia", "https://www.dropbox.com/s/8w8fsxoe90p7cg5/225-0-White-Gold-100200300-gr-.JPG?dl=0", "Magnesia en Bolsa 300g");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA CINTAS*/
 INSERT INTO `Products` VALUES (33, 60.00, "Cintas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Cinta Blanca Grande");
