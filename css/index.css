@@ -83,3 +83,55 @@ video {
     margin-top: 15%;
   }
 }
+
+.carousel-indicators li {
+  background: #C4C4BE;
+  border-color: #C4C4BE;
+}
+
+.carousel-indicators li.active {
+	  background: #99c5ff;
+    border-color: #99c5ff;
+}
+
+
+.item {
+  padding: 0px 50px 0px 50px;
+}
+
+.control-carousel {
+  position: absolute;
+  top: 40%;
+  font-size: 60px;
+  color: #C2C2C1;
+}
+
+.control-carousel:hover{
+  color: #636363 ;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.carousel-inner {
+
+}
+
+.carousel-inner img {
+  max-height: 400px;
+  margin: auto;
+}
+
+@media (min-width:992px){
+  .control-carousel.left {
+    margin-left: 100px;
+  }
+
+  .control-carousel.right {
+    margin-right: 100px;
+}
