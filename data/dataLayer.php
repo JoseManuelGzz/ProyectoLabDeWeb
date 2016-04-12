@@ -24,10 +24,10 @@
 						break;
 			case 406:	$header .= "406 User Not Found";
 						break;
-            case 409:	$header .= "409 Your action was not completed correctly, please try again later";
+      case 409:	$header .= "409 Your action was not completed correctly, please try again later";
 						break;
-            case 412:   $header .= "412 Email already in use";
-                        break;
+      case 412:   $header .= "412 Email already in use";
+            break;
 			case 417:	$header .= "417 No content set in the cookie/session";
 						break;
 			default:	$header .= "404 Request Not Found";
@@ -44,7 +44,7 @@
         if ($conn != null) {
         	$sql = "SELECT Username, Password FROM Users WHERE Email = '$email'";
 			$result = $conn->query($sql);
-			
+
 			# If the current user exists
 			if ($result->num_rows > 0) {
 				$row = $result -> fetch_assoc();
@@ -98,13 +98,13 @@
 
         if ($conn != null)
         {
-        	$sql = "INSERT INTO Users(Email, Username, Password) VALUES ('$email', '$username', '$password')";		
-			if (mysqli_query($conn, $sql)) 
+        	$sql = "INSERT INTO Users(Email, Username, Password) VALUES ('$email', '$username', '$password')";
+			if (mysqli_query($conn, $sql))
 	    	{
 	    		$conn->close();
 			    return array("status" => "COMPLETE");
-			} 
-			else 
+			}
+			else
 			{
 				$conn->close();
 				return errors(409);
@@ -116,5 +116,25 @@
         	$conn->close();
         	return errors(500);
         }
+    }
+
+    function getProducts($category) {
+      $conn = connect();
+
+  		if($conn != null) {
+  			$sql = "SELECT * FROM Products WHERE category = '$category'";
+  			$result = $conn->query($sql);
+
+  			while($row = $result->fetch_assoc()) {
+  				$response = array('message' => 'OK', 'price' => $row['price'],
+          'description' => $row['description'], 'image_url' => $row['image_url'],
+          'name' => $row['name']);
+  			}
+  			$conn->close();
+  			return $response;
+  		} else {
+  			$conn->close();
+  			return errors(404);
+  		}
     }
 ?>
