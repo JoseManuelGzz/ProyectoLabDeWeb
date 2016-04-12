@@ -125,6 +125,10 @@ ul{
 	display: inline-block;
 }
 
+a {
+    cursor: pointer;    
+}
+
 /*
 .add-fav h4 a {
 	font-size:0.85em;
