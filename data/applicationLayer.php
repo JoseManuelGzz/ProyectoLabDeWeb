@@ -9,6 +9,8 @@
           break;
     case 'REGISTER': registerUser();
           break;
+    case 'PRODUCTFILTER': productFilter();
+          break;
   }
 
   # Action to login the current user credentials and redirect it to home.html
@@ -75,7 +77,20 @@
 			die(json_encode($result));
 		}
 	}
-    
+
+  function productFilter() {
+    $category = $_POST['category'];
+
+		$result = getProducts($category);
+
+    if ($result['message'] == 'OK') {
+			echo json_encode($result);
+		} else {
+			header($result['header']);
+			die(json_encode($result));
+		}
+  }
+
     # Action to encrypt the password of the user
 	function encryptPassword() {
 		$userPassword = $_POST['password'];
@@ -83,15 +98,15 @@
 	    $key = "bcb04b7e103a0cd8b5476305";
 
 	    $key_size =  strlen($key);
-	    
+
 	    $plaintext = $userPassword;
 
 	    $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
 	    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
-	    
+
 	    $ciphertext = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $plaintext, MCRYPT_MODE_CBC, $iv);
 	    $ciphertext = $iv . $ciphertext;
-	    
+
 	    $userPassword = base64_encode($ciphertext);
 
 	    return $userPassword;
@@ -99,12 +114,12 @@
 
 	# Action to decrypt the password of the user
 	function decryptPassword($password) {
-		
+
 		$key = "bcb04b7e103a0cd8b5476305";
 
 	    $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
 	    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
-    	
+
 	    $ciphertext_dec = base64_decode($password);
 	    $iv_dec = substr($ciphertext_dec, 0, $iv_size);
 	    $ciphertext_dec = substr($ciphertext_dec, $iv_size);
@@ -121,10 +136,10 @@
 	    }
 
 	    $password = substr($password, 0,  $length - $count);
-	    
+
 	    return $password;
 	}
-    
+
     # Action to set the cookies
 	function cookieSet() {
 		$email = $_POST["email"];
@@ -137,7 +152,7 @@
 	{
 		if (isset($_COOKIE['email']))
 		{
-			echo json_encode(array('email' => $_COOKIE['email']));   	    
+			echo json_encode(array('email' => $_COOKIE['email']));
 		}
 		else
 		{
