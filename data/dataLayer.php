@@ -22,12 +22,14 @@
 						break;
 			case 306:	$header .= "306 Wrong Credentials";
 						break;
+            case 315:   $header .= "315 Products not found for category";
+                        break;
 			case 406:	$header .= "406 User Not Found";
 						break;
-      case 409:	$header .= "409 Your action was not completed correctly, please try again later";
-						break;
-      case 412:   $header .= "412 Email already in use";
-            break;
+            case 409:	$header .= "409 Your action was not completed correctly, please try again later";
+                        break;
+            case 412:   $header .= "412 Email already in use";
+                        break;
 			case 417:	$header .= "417 No content set in the cookie/session";
 						break;
 			default:	$header .= "404 Request Not Found";
@@ -122,19 +124,27 @@
       $conn = connect();
 
   		if($conn != null) {
-  			$sql = "SELECT * FROM Products WHERE category = '$category'";
+            if($category == 'Todas') {
+  			    $sql = "SELECT * FROM Products";
+            }
+            else {
+                $sql = "SELECT * FROM Products WHERE category = '$category'";
+            }
+            
   			$result = $conn->query($sql);
+            
+            $response = array("message" => "OK");
 
   			while($row = $result->fetch_assoc()) {
-  				$response = array('message' => 'OK', 'price' => $row['price'],
-          'description' => $row['description'], 'image_url' => $row['image_url'],
-          'name' => $row['name']);
+  				array_push($response, array('price' => $row['price'],
+                   'image_url' => $row['image_url'], 'name' => $row['name']));
   			}
+              
   			$conn->close();
   			return $response;
   		} else {
   			$conn->close();
-  			return errors(404);
+  			return errors(315);
   		}
     }
 ?>

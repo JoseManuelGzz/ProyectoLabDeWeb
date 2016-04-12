@@ -82,7 +82,7 @@ $(document).ready(function() {
 				dataType: "json",
 				data: jsonObject,
 				headers: {"Content-Type": "application/x-www-form-urlencoded"},
-				success: function() {
+				success: function(jsonData) {
 					alert("Welcome " + username + "!");
 					window.location.replace('tienda.html');
 				},

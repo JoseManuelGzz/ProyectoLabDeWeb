@@ -78,13 +78,14 @@ ul{
 
 .producto {
   width: 23%;
+  height: 300px;
   display: block;
 	float: left;
   text-align: center;
 	position: relative;
 	background:#FFF;
   margin: 1% 0 1% 1.6%;
-  padding:0px;
+  padding-top: 5px;
 }
 
 .producto a{
