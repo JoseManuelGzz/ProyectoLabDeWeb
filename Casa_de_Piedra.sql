@@ -109,17 +109,17 @@ INSERT INTO `Products` VALUES (4, 800.00, "Gatas", "http://www.vertimania.com/im
 INSERT INTO `Products` VALUES (5, 800.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Demon");
 INSERT INTO `Products` VALUES (6, 800.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Frenzy Velcro");
 INSERT INTO `Products` VALUES (7, 800.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Mugen Tech Lance");
-INSERT INTO `Products` VALUES (8, 1350.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Drifter");
-INSERT INTO `Products` VALUES (9, 1700.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "M5");
-INSERT INTO `Products` VALUES (10, 2298.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Red Line");
-INSERT INTO `Products` VALUES (11, 1950.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Shark 2.0");
-INSERT INTO `Products` VALUES (12, 1950.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Lotus");
-INSERT INTO `Products` VALUES (13, 1850.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Lyra");
-INSERT INTO `Products` VALUES (14, 950.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Mad Monkey");
-INSERT INTO `Products` VALUES (15, 1598.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Flash");
-INSERT INTO `Products` VALUES (16, 1598.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Flash Yellow");
-INSERT INTO `Products` VALUES (17, 1698.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Pulse Positive");
-INSERT INTO `Products` VALUES (18, 1698.00, "Gatas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Pulse Negative");
+INSERT INTO `Products` VALUES (8, 1350.00, "Gatas", "https://www.dropbox.com/s/lshrecrz01a0m6f/30-0-Drifter.JPG?dl=0", "Drifter");
+INSERT INTO `Products` VALUES (9, 1700.00, "Gatas", "https://www.dropbox.com/s/gtkgap9wu6g08sq/29-2-M5.JPG?dl=0", "M5");
+INSERT INTO `Products` VALUES (10, 2298.00, "Gatas", "https://www.dropbox.com/s/61vxq3o18cz2m0u/481-0-RedLine.JPG?dl=0", "RedLine");
+INSERT INTO `Products` VALUES (11, 1950.00, "Gatas", "https://www.dropbox.com/s/z4324wd99htl29t/18-0-prod-1.JPG?dl=0", "Shark 2.0");
+INSERT INTO `Products` VALUES (12, 1950.00, "Gatas", "https://www.dropbox.com/s/iffmenf54z9c5np/378-0-Lotus.JPG?dl=0", "Lotus");
+INSERT INTO `Products` VALUES (13, 1850.00, "Gatas", "https://www.dropbox.com/s/yxhcsbida5gnx85/379-0-Lyra.JPG?dl=0", "Lyra");
+INSERT INTO `Products` VALUES (14, 950.00, "Gatas", "https://www.dropbox.com/s/gsizw37moc04l2u/203-0-Mad-Monkey-2-0.JPG?dl=0", "Mad Monkey");
+INSERT INTO `Products` VALUES (15, 1598.00, "Gatas", "https://www.dropbox.com/s/3eq2ftmw28z8f2f/28-0-Flash-2.0.JPG?dl=0", "Flash 2.0");
+INSERT INTO `Products` VALUES (16, 1598.00, "Gatas", "https://www.dropbox.com/s/gy6v85zu6gljb66/480-0-Flash-2-0-amarillo.JPG?dl=0", "Flash Yellow");
+INSERT INTO `Products` VALUES (17, 1698.00, "Gatas", "https://www.dropbox.com/s/5d6txmoo6fmxxnx/578-0-Pulse-Positive.JPG?dl=0", "Pulse Positive");
+INSERT INTO `Products` VALUES (18, 1698.00, "Gatas", "https://www.dropbox.com/s/iwb6m29kdx3f6nf/577-0-Pulse-Negative.JPG?dl=0", "Pulse Negative");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MAGNESIERAS*/
 INSERT INTO `Products` VALUES (19, 265.00, "Magnesieras", "http://www.vertimania.com/images/P/super-8-440.jpg", "Magnesiera Mojo Chalk Bag");
