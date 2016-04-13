@@ -140,44 +140,44 @@ INSERT INTO `Products` VALUES (31, 85.00, "Magnesia", "http://exposure.mx/images
 INSERT INTO `Products` VALUES (32, 215.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "Magnesia en Bolsa 300g");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA CINTAS*/
-INSERT INTO `Products` VALUES (33, 60.00, "Cintas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Cinta Blanca Grande");
-INSERT INTO `Products` VALUES (34, 35.00, "Cintas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Cinta Blanca Chica");
-INSERT INTO `Products` VALUES (35, 80.00, "Cintas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Cinta de Color");
+INSERT INTO `Products` VALUES (33, 60.00, "Cintas", "http://exposure.mx/images/productos/334-0-Canyon-Tech-9-5mm-200m.JPG", "Cinta Blanca Grande");
+INSERT INTO `Products` VALUES (34, 35.00, "Cintas", "http://exposure.mx/images/productos/333-0-Canyon-Tech-9-5mm-61m.JPG", "Cinta Blanca Chica");
+INSERT INTO `Products` VALUES (35, 80.00, "Cintas", "http://exposure.mx/images/productos/332-0-9mm-Accessory-cord.JPG", "Cinta de Color");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA ARNESES*/
-INSERT INTO `Products` VALUES (36, 890.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "Arnes Mars");
-INSERT INTO `Products` VALUES (37, 890.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "Arnes Venus");
-INSERT INTO `Products` VALUES (38, 2450.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "Big Gun");
-INSERT INTO `Products` VALUES (39, 1050.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "Primerose");
-INSERT INTO `Products` VALUES (40, 1998.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "Primerose Paquete");
-INSERT INTO `Products` VALUES (41, 1050.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "Momentum Ds");
-INSERT INTO `Products` VALUES (42, 1998.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "Momentum Paquete");
-INSERT INTO `Products` VALUES (43, 950.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "WIZ KID");
-INSERT INTO `Products` VALUES (44, 890.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "Ozone");
-INSERT INTO `Products` VALUES (45, 980.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "Chaos");
-INSERT INTO `Products` VALUES (46, 950.00, "Arneses", "http://www.vertimania.com/images/P/super-8-440.jpg", "Flight");
+INSERT INTO `Products` VALUES (36, 890.00, "Arneses", "http://exposure.mx/images/productos/247-0-Mars.JPG", "Arnes Mars");
+INSERT INTO `Products` VALUES (37, 890.00, "Arneses", "http://exposure.mx/images/productos/248-0-Venus.JPG", "Arnes Venus");
+INSERT INTO `Products` VALUES (38, 2450.00, "Arneses", "http://exposure.mx/images/productos/146-0-Big-Gun.JPG", "Big Gun");
+INSERT INTO `Products` VALUES (39, 1050.00, "Arneses", "http://exposure.mx/images/productos/451-0-Primrose.JPG", "Primerose");
+INSERT INTO `Products` VALUES (40, 1998.00, "Arneses", "http://exposure.mx/images/productos/471-0-Paquete-Primrose.JPG", "Primerose Paquete");
+INSERT INTO `Products` VALUES (41, 1050.00, "Arneses", "http://exposure.mx/images/productos/152-0-Momentum-DS.JPG", "Momentum Ds");
+INSERT INTO `Products` VALUES (42, 1998.00, "Arneses", "http://exposure.mx/images/productos/470-0-Paquete-Momentum.JPG", "Momentum Paquete");
+INSERT INTO `Products` VALUES (43, 950.00, "Arneses", "http://exposure.mx/images/productos/161-0-Wiz-Kid.JPG", "WIZ KID");
+INSERT INTO `Products` VALUES (44, 890.00, "Arneses", "http://exposure.mx/images/productos/145-0-Ozone.JPG", "Ozone");
+INSERT INTO `Products` VALUES (45, 980.00, "Arneses", "http://exposure.mx/images/productos/144-0-Chaos.JPG", "Chaos");
+INSERT INTO `Products` VALUES (46, 950.00, "Arneses", "http://exposure.mx/images/productos/249-0-Galaxy.JPG", "Galaxy");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA CASCOS*/
-INSERT INTO `Products` VALUES (47, 1298.00, "Cascos", "http://www.vertimania.com/images/P/super-8-440.jpg", "Casco Half Dome / Azul");
-INSERT INTO `Products` VALUES (48, 1298.00, "Cascos", "http://www.vertimania.com/images/P/super-8-440.jpg", "Casco Half Dome / Naranja");
-INSERT INTO `Products` VALUES (49, 1298.00, "Cascos", "http://www.vertimania.com/images/P/super-8-440.jpg", "Casco Half Dome / Rojo");
-INSERT INTO `Products` VALUES (50, 1798.00, "Cascos", "http://www.vertimania.com/images/P/super-8-440.jpg", "Casco Vector / Negro");
-INSERT INTO `Products` VALUES (51, 1798.00, "Cascos", "http://www.vertimania.com/images/P/super-8-440.jpg", "Casco Vector / Gris");
-INSERT INTO `Products` VALUES (52, 2598.00, "Cascos", "http://www.vertimania.com/images/P/super-8-440.jpg", "Casco VAPOR / Rojo");
-INSERT INTO `Products` VALUES (53, 2598.00, "Cascos", "http://www.vertimania.com/images/P/super-8-440.jpg", "Casco VAPOR / Gris");
+INSERT INTO `Products` VALUES (47, 1298.00, "Cascos", "http://exposure.mx/images/productos/172-3-Half-Dome.JPG", "Casco Half Dome / Azul");
+INSERT INTO `Products` VALUES (48, 1298.00, "Cascos", "http://exposure.mx/images/productos/172-0-Half-Dome.JPG", "Casco Half Dome / Naranja");
+INSERT INTO `Products` VALUES (49, 1298.00, "Cascos", "http://fisura.org/media/catalog/product/cache/1/image/700x700/9df78eab33525d08d6e5fb8d27136e95/c/a/casco_half_dome_rojo_de_black_diamond.jpg", "Casco Half Dome / Rojo");
+INSERT INTO `Products` VALUES (50, 1798.00, "Cascos", "http://exposure.mx/images/productos/170-0-Vector.JPG", "Casco Vector / Negro");
+INSERT INTO `Products` VALUES (51, 1798.00, "Cascos", "http://exposure.mx/images/productos/170-1-Vector.JPG", "Casco Vector / Gris");
+INSERT INTO `Products` VALUES (52, 2598.00, "Cascos", "http://exposure.mx/images/productos/169-0-Vapor.JPG", "Casco VAPOR / Rojo");
+INSERT INTO `Products` VALUES (53, 2598.00, "Cascos", "http://exposure.mx/images/productos/169-1-Vapor.JPG", "Casco VAPOR / Gris");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA SEGUROS*/
-INSERT INTO `Products` VALUES (54, 1749.00, "Seguros", "http://www.vertimania.com/images/P/super-8-440.jpg", "Gri Gri");
-INSERT INTO `Products` VALUES (55, 349.00, "Seguros", "http://www.vertimania.com/images/P/super-8-440.jpg", "Atc");
-INSERT INTO `Products` VALUES (56, 560.00, "Seguros", "http://www.vertimania.com/images/P/super-8-440.jpg", "Atc con Mosqueton");
-INSERT INTO `Products` VALUES (57, 999.00, "Seguros", "http://www.vertimania.com/images/P/super-8-440.jpg", "Big Air Atc-Mosqueton");
+INSERT INTO `Products` VALUES (54, 1749.00, "Seguros", "https://www.forumsport.com/img/productos/1000x1000/PETZL%20ASEGURADOR-RAPELADOR%20GRIGRI%202-393008_00.jpg", "Gri Gri");
+INSERT INTO `Products` VALUES (55, 349.00, "Seguros", "http://exposure.mx/images/productos/100-0-ATC.JPG", "Atc");
+INSERT INTO `Products` VALUES (56, 560.00, "Seguros", "http://exposure.mx/images/productos/99-0-ATC-XP.JPG", "Atc con Mosqueton");
+INSERT INTO `Products` VALUES (57, 999.00, "Seguros", "http://exposure.mx/images/productos/103-0-Big-Air-XP-Package.JPG", "Big Air Atc-Mosqueton");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA BANDAS*/
-INSERT INTO `Products` VALUES (58, 1998.00, "Bandas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Posiwire Paquete de 6");
-INSERT INTO `Products` VALUES (59, 999.00, "Bandas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Positron Quickdraw 18cm");
-INSERT INTO `Products` VALUES (60, 999.00, "Bandas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Posiwire Quickdraw 18cm");
-INSERT INTO `Products` VALUES (61, 999.00, "Bandas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Freewire Quickdraw 12cm");
-INSERT INTO `Products` VALUES (62, 999.00, "Bandas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Positron Paquete de 6");
+INSERT INTO `Products` VALUES (58, 1998.00, "Bandas", "http://exposure.mx/images/productos/58-0-PosiWire-Quickpack.JPG", "Posiwire Paquete de 6");
+INSERT INTO `Products` VALUES (59, 999.00, "Bandas", "http://exposure.mx/images/productos/55-0-Positron-Quickdraw.JPG", "Positron Quickdraw 18cm");
+INSERT INTO `Products` VALUES (60, 999.00, "Bandas", "http://exposure.mx/images/productos/57-0-PosiWire-Quickdraw.JPG", "Posiwire Quickdraw 18cm");
+INSERT INTO `Products` VALUES (61, 999.00, "Bandas", "http://exposure.mx/images/productos/60-0-FreeWire-Quickdraw.JPG", "Freewire Quickdraw 12cm");
+INSERT INTO `Products` VALUES (62, 999.00, "Bandas", "http://exposure.mx/images/productos/56-0-Positron-Quickpack.JPG", "Positron Paquete de 6");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA RUNNERS*/
 INSERT INTO `Products` VALUES (63, 999.00, "Runners", "http://www.vertimania.com/images/P/super-8-440.jpg", "Nylon Runner Azul 18mm - 120cm");
