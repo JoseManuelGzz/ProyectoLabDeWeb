@@ -140,9 +140,9 @@ INSERT INTO `Products` VALUES (31, 85.00, "Magnesia", "http://exposure.mx/images
 INSERT INTO `Products` VALUES (32, 215.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "Magnesia en Bolsa 300g");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA CINTAS*/
-INSERT INTO `Products` VALUES (33, 60.00, "Cintas", "http://exposure.mx/images/productos/334-0-Canyon-Tech-9-5mm-200m.JPG", "Cinta Blanca Grande");
-INSERT INTO `Products` VALUES (34, 35.00, "Cintas", "http://exposure.mx/images/productos/333-0-Canyon-Tech-9-5mm-61m.JPG", "Cinta Blanca Chica");
-INSERT INTO `Products` VALUES (35, 80.00, "Cintas", "http://exposure.mx/images/productos/332-0-9mm-Accessory-cord.JPG", "Cinta de Color");
+INSERT INTO `Products` VALUES (33, 60.00, "Cintas", "http://images.internetstores.de/products/2501[1470x849].jpg?forceSize=true&forceAspectRatio=true", "Cinta Blanca Grande");
+INSERT INTO `Products` VALUES (34, 35.00, "Cintas", "http://images.internetstores.de/products/371471[1470x849].jpg?forceSize=true&forceAspectRatio=true", "Cinta Blanca Chica");
+INSERT INTO `Products` VALUES (35, 80.00, "Cintas", "http://exposure.mx/images/productos/572-0-1.JPG", "Cinta de Color");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA ARNESES*/
 INSERT INTO `Products` VALUES (36, 890.00, "Arneses", "http://exposure.mx/images/productos/247-0-Mars.JPG", "Arnes Mars");
@@ -180,33 +180,33 @@ INSERT INTO `Products` VALUES (61, 999.00, "Bandas", "http://exposure.mx/images/
 INSERT INTO `Products` VALUES (62, 999.00, "Bandas", "http://exposure.mx/images/productos/56-0-Positron-Quickpack.JPG", "Positron Paquete de 6");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA RUNNERS*/
-INSERT INTO `Products` VALUES (63, 999.00, "Runners", "http://www.vertimania.com/images/P/super-8-440.jpg", "Nylon Runner Azul 18mm - 120cm");
-INSERT INTO `Products` VALUES (64, 999.00, "Runners", "http://www.vertimania.com/images/P/super-8-440.jpg", "10mm Dynex 60cm");
-INSERT INTO `Products` VALUES (65, 999.00, "Runners", "http://www.vertimania.com/images/P/super-8-440.jpg", "10mm Dynex 120cm");
-INSERT INTO `Products` VALUES (66, 999.00, "Runners", "http://www.vertimania.com/images/P/super-8-440.jpg", "18mm Nylon 60cm");
-INSERT INTO `Products` VALUES (67, 999.00, "Runners", "http://www.vertimania.com/images/P/super-8-440.jpg", "DAISY");
-INSERT INTO `Products` VALUES (68, 999.00, "Runners", "http://www.vertimania.com/images/P/super-8-440.jpg", "12mm Dynex 115cm");
-INSERT INTO `Products` VALUES (69, 999.00, "Runners", "http://www.vertimania.com/images/P/super-8-440.jpg", "12mm Dynex 140cm");
-INSERT INTO `Products` VALUES (70, 288.00, "Runners", "http://www.vertimania.com/images/P/super-8-440.jpg", "18mm Nylon 140cm");
+INSERT INTO `Products` VALUES (63, 999.00, "Runners", "http://es3.vmstatic.com/cuerdas-y-cintas-black-diamond-18-mm-nylon-runner-120-cm-95846265-0-150-02.jpg", "Nylon Runner Azul 18mm - 120cm");
+INSERT INTO `Products` VALUES (64, 999.00, "Runners", "http://www.vertimania.com/images/P/dynex%20runners%20440-01.jpg", "10mm Dynex 60cm");
+INSERT INTO `Products` VALUES (65, 999.00, "Runners", "http://www.vertimania.com/images/P/dynex%20runners%20440-01.jpg", "10mm Dynex 120cm");
+INSERT INTO `Products` VALUES (66, 999.00, "Runners", "http://www.vertimania.com/images/P/nylon_runners%20440.jpg", "18mm Nylon 60cm");
+INSERT INTO `Products` VALUES (67, 999.00, "Runners", "http://www.vertimania.com/images/P/daisychain_115cm_gry-440.jpg", "Daisy 18mm Nylon 115cm");
+INSERT INTO `Products` VALUES (68, 999.00, "Runners", "http://www.vertimania.com/images/P/dynex_dc-440.jpg", "12mm Dynex 115cm");
+INSERT INTO `Products` VALUES (69, 999.00, "Runners", "http://www.vertimania.com/images/P/dynex_dc-440.jpg", "12mm Dynex 140cm");
+INSERT INTO `Products` VALUES (70, 288.00, "Runners", "http://www.vertimania.com/images/P/daisychain_140-440.jpg", "18mm Nylon 140cm");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA CEPILLOS*/
 INSERT INTO `Products` VALUES (71, 150.00, "Cepillos", "http://www.vertimania.com/images/P/super-8-440.jpg", "FlexEx Bandas Dedos");
 INSERT INTO `Products` VALUES (72, 250.00, "Cepillos", "http://www.vertimania.com/images/P/super-8-440.jpg", "Cepillos");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA GUANTES*/
-INSERT INTO `Products` VALUES (73, 485.00, "Guantes", "http://www.vertimania.com/images/P/super-8-440.jpg", "Guantes Crag Slove");
-INSERT INTO `Products` VALUES (74, 999.00, "Guantes", "http://www.vertimania.com/images/P/super-8-440.jpg", "Stone");
+INSERT INTO `Products` VALUES (73, 485.00, "Guantes", "http://exposure.mx/images/productos/154-0-Crag-glove.JPG", "Guantes Crag Slove");
+INSERT INTO `Products` VALUES (74, 999.00, "Guantes", "http://exposure.mx/images/productos/455-0-Stone.JPG", "Stone");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA CUERDAS*/
-INSERT INTO `Products` VALUES (75, 999.00, "Cuerdas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Marathon Pro x70m");
-INSERT INTO `Products` VALUES (76, 999.00, "Cuerdas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Ev Velocity x70m");
-INSERT INTO `Products` VALUES (77, 999.00, "Cuerdas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Canyontech x61m");
+INSERT INTO `Products` VALUES (75, 999.00, "Cuerdas", "http://exposure.mx/images/productos/342-0-Marathon-Pro-10-1mm-70m.JPG", "Marathon Pro x70m");
+INSERT INTO `Products` VALUES (76, 999.00, "Cuerdas", "http://exposure.mx/images/productos/570-0-Evolution-Velocity-Sharma-70-m.JPG", "Evolution Velocity x70m");
+INSERT INTO `Products` VALUES (77, 999.00, "Cuerdas", "http://exposure.mx/images/productos/333-0-Canyon-Tech-9-5mm-61m.JPG", "Canyontech x61m");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MOCHILAS*/
-INSERT INTO `Products` VALUES (78, 999.00, "Mochilas", "http://www.vertimania.com/images/P/super-8-440.jpg", "ONYX 65");
-INSERT INTO `Products` VALUES (79, 999.00, "Mochilas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Mercury 55");
-INSERT INTO `Products` VALUES (80, 970.00, "Mochilas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Superchute");
-INSERT INTO `Products` VALUES (81, 1598.00, "Mochilas", "http://www.vertimania.com/images/P/super-8-440.jpg", "Stone 42 Duffel");
+INSERT INTO `Products` VALUES (78, 999.00, "Mochilas", "http://exposure.mx/images/productos/112-0-Onyx-65.JPG", "ONYX 65");
+INSERT INTO `Products` VALUES (79, 999.00, "Mochilas", "http://exposure.mx/images/productos/106-0-Mercury-55.JPG", "Mercury 55");
+INSERT INTO `Products` VALUES (80, 970.00, "Mochilas", "http://exposure.mx/images/productos/125-0-Super-Chute.JPG", "Superchute");
+INSERT INTO `Products` VALUES (81, 1598.00, "Mochilas", "http://exposure.mx/images/productos/454-0-Stone-42-Duffel.JPG", "Stone 42 Duffel");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MOSQUETONES*/
 INSERT INTO `Products` VALUES (82, 498.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Magnetron RockLock");
