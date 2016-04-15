@@ -77,6 +77,10 @@ h1,h2,h3,h4,h5,h6 {
   color:#fff;
   font-family:Montserrat,"Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
+.navbar-brand {
+  padding: 5px;
+  padding-top: 10px;
+}
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand.active {
   color:#fff;
   border: 3px solid #fff;
