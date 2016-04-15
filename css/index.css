@@ -32,6 +32,7 @@ video {
   width:  100%;
 }
 
+/*
 #videoHeader {
   color: #FFF;
   z-index: 1;
@@ -47,6 +48,15 @@ video {
   letter-spacing: 1px;
   font-size: 24px;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+*/
+
+#videoBrand {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  display: block;
 }
 
 #videoInfo {
