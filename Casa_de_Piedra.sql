@@ -209,27 +209,27 @@ INSERT INTO `Products` VALUES (80, 970.00, "Mochilas", "http://exposure.mx/image
 INSERT INTO `Products` VALUES (81, 1598.00, "Mochilas", "http://exposure.mx/images/productos/454-0-Stone-42-Duffel.JPG", "Stone 42 Duffel");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MOSQUETONES*/
-INSERT INTO `Products` VALUES (82, 498.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Magnetron RockLock");
-INSERT INTO `Products` VALUES (83, 498.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Magnetron GridLock");
-INSERT INTO `Products` VALUES (84, 498.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Magnetron VaporLock");
-INSERT INTO `Products` VALUES (85, 1598.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Gridlock c/seguro manual");
-INSERT INTO `Products` VALUES (86, 1598.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Rocklock c/seguro manual");
-INSERT INTO `Products` VALUES (87, 1598.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Vaporlock c/seguro manual");
-INSERT INTO `Products` VALUES (88, 1598.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Mini pearabiner c/seguro manual");
-INSERT INTO `Products` VALUES (89, 1598.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Nitron c/seguro manual");
-INSERT INTO `Products` VALUES (90, 180.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Ultra Tech HMS c/seguro manual");
-INSERT INTO `Products` VALUES (91, 198.00, "Mosquetones", "http://www.vertimania.com/images/P/super-8-440.jpg", "Hulk HMS c/seguro manual");
+INSERT INTO `Products` VALUES (82, 498.00, "Mosquetones", "http://exposure.mx/images/productos/31-0-Magnetron-RockLock.JPG", "Magnetron RockLock");
+INSERT INTO `Products` VALUES (83, 498.00, "Mosquetones", "http://exposure.mx/images/productos/32-0-Magnetron-VaporLock.JPG", "Magnetron GridLock");
+INSERT INTO `Products` VALUES (84, 498.00, "Mosquetones", "http://exposure.mx/images/productos/33-0-Magnetron-GridLock.JPG", "Magnetron VaporLock");
+INSERT INTO `Products` VALUES (85, 1598.00, "Mosquetones", "http://exposure.mx/images/productos/36-0-GridLock-Screwgate.JPG", "Gridlock c/seguro manual");
+INSERT INTO `Products` VALUES (86, 1598.00, "Mosquetones", "http://exposure.mx/images/productos/34-0-RockLock-Screwgate.JPG", "Rocklock c/seguro manual");
+INSERT INTO `Products` VALUES (87, 1598.00, "Mosquetones", "http://exposure.mx/images/productos/37-0-VaporLock-Screwgate.JPG", "Vaporlock c/seguro manual");
+INSERT INTO `Products` VALUES (88, 1598.00, "Mosquetones", "http://exposure.mx/images/productos/38-0-Mini-Pearabiner-Screwgate.JPG", "Mini pearabiner c/seguro manual");
+INSERT INTO `Products` VALUES (89, 1598.00, "Mosquetones", "http://exposure.mx/images/productos/39-0-Nitron-Screwgate.JPG", "Nitron c/seguro manual");
+INSERT INTO `Products` VALUES (90, 180.00, "Mosquetones", "http://exposure.mx/images/productos/178-0-Ultra-Tech-HMS-Screw.JPG", "Ultra Tech HMS c/seguro manual");
+INSERT INTO `Products` VALUES (91, 198.00, "Mosquetones", "http://exposure.mx/images/productos/528-0-HULK-HMS-SCREW-black.JPG", "Hulk HMS c/seguro manual");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA RECIPIENTES*/
-INSERT INTO `Products` VALUES (92, 150.00, "Recipientes", "http://www.vertimania.com/images/P/super-8-440.jpg", "Taza");
-INSERT INTO `Products` VALUES (93, 698.00, "Recipientes", "http://www.vertimania.com/images/P/super-8-440.jpg", "Glacier SS - Vacuum Bottle");
+INSERT INTO `Products` VALUES (92, 150.00, "Recipientes", "http://exposure.mx/images/productos/313-0-50-oz-Java-Press.JPG", "Taza");
+INSERT INTO `Products` VALUES (93, 698.00, "Recipientes", "http://exposure.mx/images/productos/277-0-1-L-Glacier-Stainless-Dukjug.JPG", "Glacier SS - Vacuum Bottle");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA GORROS Y GORRAS*/
-INSERT INTO `Products` VALUES (94, 455.00, "Gorros", "http://www.vertimania.com/images/P/super-8-440.jpg", "Tom Pon Beanie");
-INSERT INTO `Products` VALUES (95, 150.00, "Gorros", "http://www.vertimania.com/images/P/super-8-440.jpg", "BD Hat");
-INSERT INTO `Products` VALUES (96, 150.00, "Gorros", "http://www.vertimania.com/images/P/super-8-440.jpg", "Pro Hat");
-INSERT INTO `Products` VALUES (97, 150.00, "Gorros", "http://www.vertimania.com/images/P/super-8-440.jpg", "BD Trucker Hat");
-INSERT INTO `Products` VALUES (98, 150.00, "Gorros", "http://www.vertimania.com/images/P/super-8-440.jpg", "Walter Beanie");
-INSERT INTO `Products` VALUES (99, 150.00, "Gorros", "http://www.vertimania.com/images/P/super-8-440.jpg", "Torrelwood Beanie Update");
-INSERT INTO `Products` VALUES (100, 150.00, "Gorros", "http://www.vertimania.com/images/P/super-8-440.jpg", "BD Balaclava");
-INSERT INTO `Products` VALUES (101, 150.00, "Gorros", "http://www.vertimania.com/images/P/super-8-440.jpg", "Tara Wool Beanie");
+INSERT INTO `Products` VALUES (94, 455.00, "Gorros", "http://exposure.mx/images/productos/445-0-Tom-Beanie.JPG", "Tom Pon Beanie");
+INSERT INTO `Products` VALUES (95, 150.00, "Gorros", "http://exposure.mx/images/productos/243-0-BD-Hat.JPG", "BD Hat");
+INSERT INTO `Products` VALUES (96, 150.00, "Gorros", "http://exposure.mx/images/productos/244-0-Pro-Hat.JPG", "Pro Hat");
+INSERT INTO `Products` VALUES (97, 150.00, "Gorros", "http://exposure.mx/images/productos/242-0-Trucker-BD-hat.JPG", "BD Trucker Hat");
+INSERT INTO `Products` VALUES (98, 150.00, "Gorros", "http://exposure.mx/images/productos/555-0-Walter-Beanie.JPG", "Walter Beanie");
+INSERT INTO `Products` VALUES (99, 150.00, "Gorros", "http://exposure.mx/images/productos/554-0-Torre-Wool.JPG", "Torrelwood Beanie Update");
+INSERT INTO `Products` VALUES (100, 150.00, "Gorros", "http://exposure.mx/images/productos/508-0-Balaclava.JPG", "BD Balaclava");
+INSERT INTO `Products` VALUES (101, 150.00, "Gorros", "http://exposure.mx/images/productos/549-0-Tara-Wool.JPG", "Tara Wool Beanie");
