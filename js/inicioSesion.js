@@ -1,6 +1,36 @@
 $(document).ready(function() {
+	$.ajax({
+        type: "POST",
+        url: "data/applicationLayer.php",
+        dataType: "json",
+        data: {'action': 'GET_SESSION'},
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        success: function(jsonData) {
+			window.location.href = "tienda.html";
+        },
+        error: function(errorMsg) {
+            console.log(errorMsg.statusText);
+        }
+    });
+	
+	$.ajax({
+        type: "POST",
+        url: "data/applicationLayer.php",
+        dataType: "json",
+        data: {'action': 'GET_COOKIE'},
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        success: function(jsonData) {
+			$("#emailLogin").val(jsonData.email);
+        },
+        error: function(errorMsg) {
+            console.log(errorMsg.statusText);
+        }
+    });
+	
     // Function when the login button is clicked.
 	$("#signInButton").on("click", function() {
+
+		var rememberMe = $("#recuerdameCheckbox").is(":checked");
 
 		var jsonObject = {
 			"action": "LOGIN",
@@ -15,6 +45,22 @@ $(document).ready(function() {
 			data: jsonObject,
 			headers: {"Content-Type": "application/x-www-form-urlencoded"},
 			success: function(jsonData) {
+				if(rememberMe) {
+					$.ajax({
+						type: "POST",
+						url: "data/applicationLayer.php",
+						dataType: "json",
+						data: { 'action': 'SET_COOKIE', 'email': $("#emailLogin").val() },
+						headers: {"Content-Type": "application/x-www-form-urlencoded"},
+						success: function(jsonData2) {
+							console.log(jsonData2.status);
+						},
+						error: function(errorMsg) {
+							console.log(errorMsg.statusText);
+						}
+					});
+				}
+				
 				alert("Welcome " + jsonData.username + "!");
 				window.location.replace('tienda.html');
 			},

@@ -15,6 +15,10 @@
 		  break;
 	case 'GET_SESSION': getSession();
 		  break;
+	case 'SET_COOKIE': cookieSet();
+	      break;
+	case 'GET_COOKIE': cookieGet();
+		  break;
   }
 
   # Action to login the current user credentials and redirect it to home.html
