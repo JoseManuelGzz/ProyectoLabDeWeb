@@ -212,14 +212,14 @@ INSERT INTO `Products` VALUES (81, 970.00, "Mochilas", "http://exposure.mx/image
 INSERT INTO `Products` VALUES (82, 1598.00, "Mochilas", "http://exposure.mx/images/productos/454-0-Stone-42-Duffel.JPG", "Stone 42 Duffel");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MOSQUETONES*/
-INSERT INTO `Products` VALUES (83, 498.00, "Mosquetones", "http://exposure.mx/images/productos/31-0-Magnetron-RockLock.JPG", "Magnetron RockLock");
-INSERT INTO `Products` VALUES (84, 498.00, "Mosquetones", "http://exposure.mx/images/productos/32-0-Magnetron-VaporLock.JPG", "Magnetron GridLock");
-INSERT INTO `Products` VALUES (85, 498.00, "Mosquetones", "http://exposure.mx/images/productos/33-0-Magnetron-GridLock.JPG", "Magnetron VaporLock");
-INSERT INTO `Products` VALUES (86, 1598.00, "Mosquetones", "http://exposure.mx/images/productos/36-0-GridLock-Screwgate.JPG", "Gridlock c/seguro manual");
-INSERT INTO `Products` VALUES (87, 1598.00, "Mosquetones", "http://exposure.mx/images/productos/34-0-RockLock-Screwgate.JPG", "Rocklock c/seguro manual");
-INSERT INTO `Products` VALUES (88, 1598.00, "Mosquetones", "http://exposure.mx/images/productos/37-0-VaporLock-Screwgate.JPG", "Vaporlock c/seguro manual");
-INSERT INTO `Products` VALUES (89, 1598.00, "Mosquetones", "http://exposure.mx/images/productos/38-0-Mini-Pearabiner-Screwgate.JPG", "Mini pearabiner c/seguro manual");
-INSERT INTO `Products` VALUES (90, 1598.00, "Mosquetones", "http://exposure.mx/images/productos/39-0-Nitron-Screwgate.JPG", "Nitron c/seguro manual");
+INSERT INTO `Products` VALUES (83, 498.00, "Mosquetones", "http://exposure.mx/images/productos/31-0-Magnetron-RockLock.JPG", "Magnetron RockLock Carabiner");
+INSERT INTO `Products` VALUES (84, 498.00, "Mosquetones", "http://exposure.mx/images/productos/32-0-Magnetron-VaporLock.JPG", "Magnetron GridLock Carabiner");
+INSERT INTO `Products` VALUES (85, 498.00, "Mosquetones", "http://exposure.mx/images/productos/33-0-Magnetron-GridLock.JPG", "Magnetron VaporLock Carabiner");
+INSERT INTO `Products` VALUES (86, 398.00, "Mosquetones", "http://exposure.mx/images/productos/36-0-GridLock-Screwgate.JPG", "Gridlock c/seguro manual");
+INSERT INTO `Products` VALUES (87, 248.00, "Mosquetones", "http://exposure.mx/images/productos/34-0-RockLock-Screwgate.JPG", "Rocklock c/seguro manual");
+INSERT INTO `Products` VALUES (88, 290.00, "Mosquetones", "http://exposure.mx/images/productos/37-0-VaporLock-Screwgate.JPG", "Vaporlock c/seguro manual");
+INSERT INTO `Products` VALUES (89, 260.00, "Mosquetones", "http://exposure.mx/images/productos/38-0-Mini-Pearabiner-Screwgate.JPG", "Mini pearabiner c/seguro manual");
+INSERT INTO `Products` VALUES (90, 280.00, "Mosquetones", "http://exposure.mx/images/productos/39-0-Nitron-Screwgate.JPG", "Nitron c/seguro manual");
 INSERT INTO `Products` VALUES (91, 180.00, "Mosquetones", "http://exposure.mx/images/productos/178-0-Ultra-Tech-HMS-Screw.JPG", "Ultra Tech HMS c/seguro manual");
 INSERT INTO `Products` VALUES (92, 198.00, "Mosquetones", "http://exposure.mx/images/productos/528-0-HULK-HMS-SCREW-black.JPG", "Hulk HMS c/seguro manual");
 
@@ -236,3 +236,10 @@ INSERT INTO `Products` VALUES (99, 150.00, "Gorros", "http://exposure.mx/images/
 INSERT INTO `Products` VALUES (100, 150.00, "Gorros", "http://exposure.mx/images/productos/554-0-Torre-Wool.JPG", "Torrelwood Beanie Update");
 INSERT INTO `Products` VALUES (101, 150.00, "Gorros", "http://exposure.mx/images/productos/508-0-Balaclava.JPG", "BD Balaclava");
 INSERT INTO `Products` VALUES (102, 150.00, "Gorros", "http://exposure.mx/images/productos/549-0-Tara-Wool.JPG", "Tara Wool Beanie");
+
+/*INSERTS PARA PRODUCTOS DE CATEGORIA FISURA Y GRAN PARED*/
+INSERT INTO `Products` VALUES (104, 1390.00, "Fisura y Gran Pared", "http://exposure.mx/images/productos/519-3-Index-Ascender.JPG", "Index - Left");
+INSERT INTO `Products` VALUES (105, 1390.00, "Fisura y Gran Pared", "http://exposure.mx/images/productos/519-2-Index-Ascender.JPG", "Index - Right");
+INSERT INTO `Products` VALUES (106, 598.00, "Fisura y Gran Pared", "http://exposure.mx/images/productos/124-0-Dynex-Daisy-Chain.JPG", "12mm Dynex Daisy Chain 115cm");
+INSERT INTO `Products` VALUES (107, 698.00, "Fisura y Gran Pared", "http://exposure.mx/images/productos/124-0-Dynex-Daisy-Chain.JPG", "12mm Dynex Daisy Chain 140cm");
+INSERT INTO `Products` VALUES (108, 288.00, "Fisura y Gran Pared", "http://exposure.mx/images/productos/121-0-Nylon-Daisy-Chain.JPG", "18mm Nylon Daisy Chain 140cm");
