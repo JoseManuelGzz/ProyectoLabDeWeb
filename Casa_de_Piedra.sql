@@ -130,14 +130,12 @@ INSERT INTO `Products` VALUES (23, 180.00, "Magnesieras", "http://exposure.mx/im
 INSERT INTO `Products` VALUES (24, 198.00, "Magnesieras", "http://exposure.mx/images/productos/209-0-Kangaroo.JPG", "Kangaroo Zip Chalk Bag");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MAGNESIA*/
-INSERT INTO `Products` VALUES (25, 40.00, "Magnesia", "http://exposure.mx/images/productos/545-0-Chalk-Shot.JPG", "Bolas de Magnesia");
-INSERT INTO `Products` VALUES (26, 86.00, "Magnesia", "http://www.vertimania.com/images/P/super-8-440.jpg", "Monkey Hands");
-INSERT INTO `Products` VALUES (27, 45.00, "Magnesia", "http://exposure.mx/images/productos/227-0-White-Gold-Chalk-Block.JPG", "Cuadro de Magnesia");
-INSERT INTO `Products` VALUES (28, 60.00, "Magnesia", "http://exposure.mx/images/productos/228-0-12-Ball-Jar.JPG", "Frasco Grande");
-INSERT INTO `Products` VALUES (29, 40.00, "Magnesia", "http://exposure.mx/images/productos/228-0-12-Ball-Jar.JPG", "Frasco Chico");
-INSERT INTO `Products` VALUES (30, 145.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "Magnesia en Bolsa 200g");
-INSERT INTO `Products` VALUES (31, 85.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "Magnesia en Bolsa 100g");
-INSERT INTO `Products` VALUES (32, 215.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "Magnesia en Bolsa 300g");
+INSERT INTO `Products` VALUES (26, 80.00, "Magnesia", "http://nebula.wsimg.com/f33d0ced084732a2629a4e9c2387063f?AccessKeyId=8656AC0D7DFA467C9BC4&disposition=0&alloworigin=1", "150g Monkey Hands Chalk");
+INSERT INTO `Products` VALUES (27, 45.00, "Magnesia", "http://exposure.mx/images/productos/227-0-White-Gold-Chalk-Block.JPG", "56g Chalk Block");
+INSERT INTO `Products` VALUES (29, 40.00, "Magnesia", "http://exposure.mx/images/productos/228-0-12-Ball-Jar.JPG", "Chalk Sock Jar");
+INSERT INTO `Products` VALUES (30, 165.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "200g Loose Chalk");
+INSERT INTO `Products` VALUES (31, 98.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "100g Loose Chalk");
+INSERT INTO `Products` VALUES (32, 227.00, "Magnesia", "http://exposure.mx/images/productos/225-0-White-Gold-100200300-gr-.JPG", "300g Loose Chalk");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA CINTAS*/
 INSERT INTO `Products` VALUES (33, 60.00, "Cintas", "http://images.internetstores.de/products/2501[1470x849].jpg?forceSize=true&forceAspectRatio=true", "Cinta Blanca Grande");
@@ -169,11 +167,11 @@ INSERT INTO `Products` VALUES (52, 1798.00, "Cascos", "http://exposure.mx/images
 INSERT INTO `Products` VALUES (53, 1798.00, "Cascos", "http://exposure.mx/images/productos/170-2-Vector.JPG", "Casco Vector - Gris c/naranja");
 INSERT INTO `Products` VALUES (54, 2598.00, "Cascos", "http://exposure.mx/images/productos/169-0-Vapor.JPG", "Casco VAPOR - Rojo");
 
-/*INSERTS PARA PRODUCTOS DE CATEGORIA SEGUROS*/
-INSERT INTO `Products` VALUES (55, 1749.00, "Seguros", "https://www.forumsport.com/img/productos/1000x1000/PETZL%20ASEGURADOR-RAPELADOR%20GRIGRI%202-393008_00.jpg", "Gri Gri");
-INSERT INTO `Products` VALUES (56, 349.00, "Seguros", "http://exposure.mx/images/productos/100-0-ATC.JPG", "Atc");
-INSERT INTO `Products` VALUES (57, 560.00, "Seguros", "http://exposure.mx/images/productos/99-0-ATC-XP.JPG", "Atc con Mosqueton");
-INSERT INTO `Products` VALUES (58, 999.00, "Seguros", "http://exposure.mx/images/productos/103-0-Big-Air-XP-Package.JPG", "Big Air Atc-Mosqueton");
+/*INSERTS PARA PRODUCTOS DE CATEGORIA ASEGURADORES Y DESCENSORES*/
+INSERT INTO `Products` VALUES (55, 1749.00, "Aseguradores y Descensores", "https://www.forumsport.com/img/productos/1000x1000/PETZL%20ASEGURADOR-RAPELADOR%20GRIGRI%202-393008_00.jpg", "Gri Gri");
+INSERT INTO `Products` VALUES (56, 349.00, "Aseguradores y Descensores", "http://exposure.mx/images/productos/100-0-ATC.JPG", "Atc");
+INSERT INTO `Products` VALUES (57, 585.00, "Aseguradores y Descensores", "http://exposure.mx/images/productos/97-2-ATC-Guide.JPG", "Atc Guide");
+INSERT INTO `Products` VALUES (58, 625.00, "Aseguradores y Descensores", "http://exposure.mx/images/productos/102-0-Big-Air-Package.JPG", "Big Air Package");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA ANILLAS Y PAQUETES*/
 INSERT INTO `Products` VALUES (59, 1980.00, "Anillas y Paquetes", "http://exposure.mx/images/productos/58-0-PosiWire-Quickpack.JPG", "Posiwire Quickpack 12cm");
@@ -183,22 +181,18 @@ INSERT INTO `Products` VALUES (62, 298.00, "Anillas y Paquetes", "http://exposur
 INSERT INTO `Products` VALUES (63, 2298.00, "Anillas y Paquetes", "http://exposure.mx/images/productos/56-0-Positron-Quickpack.JPG", "Positron Quickpack 12cm");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA RUNNERS*/
-INSERT INTO `Products` VALUES (64, 999.00, "Runners", "http://es3.vmstatic.com/cuerdas-y-cintas-black-diamond-18-mm-nylon-runner-120-cm-95846265-0-150-02.jpg", "Nylon Runner Azul 18mm - 120cm");
-INSERT INTO `Products` VALUES (65, 999.00, "Runners", "http://www.vertimania.com/images/P/dynex%20runners%20440-01.jpg", "10mm Dynex 60cm");
-INSERT INTO `Products` VALUES (66, 999.00, "Runners", "http://www.vertimania.com/images/P/dynex%20runners%20440-01.jpg", "10mm Dynex 120cm");
-INSERT INTO `Products` VALUES (67, 999.00, "Runners", "http://www.vertimania.com/images/P/nylon_runners%20440.jpg", "18mm Nylon 60cm");
-INSERT INTO `Products` VALUES (68, 999.00, "Runners", "http://www.vertimania.com/images/P/daisychain_115cm_gry-440.jpg", "Daisy 18mm Nylon 115cm");
-INSERT INTO `Products` VALUES (69, 999.00, "Runners", "http://www.vertimania.com/images/P/dynex_dc-440.jpg", "12mm Dynex 115cm");
-INSERT INTO `Products` VALUES (70, 999.00, "Runners", "http://www.vertimania.com/images/P/dynex_dc-440.jpg", "12mm Dynex 140cm");
-INSERT INTO `Products` VALUES (71, 288.00, "Runners", "http://www.vertimania.com/images/P/daisychain_140-440.jpg", "18mm Nylon 140cm");
+INSERT INTO `Products` VALUES (65, 210.00, "Runners", "http://www.vertimania.com/images/P/dynex%20runners%20440-01.jpg", "10mm Dynex 60cm");
+INSERT INTO `Products` VALUES (66, 360.00, "Runners", "http://www.vertimania.com/images/P/dynex%20runners%20440-01.jpg", "10mm Dynex 120cm");
+INSERT INTO `Products` VALUES (67, 98.00, "Runners", "http://www.vertimania.com/images/P/nylon_runners%20440.jpg", "18mm Nylon 60cm");
+INSERT INTO `Products` VALUES (71, 170.00, "Runners", "http://www.vertimania.com/images/P/daisychain_140-440.jpg", "18mm Nylon 120cm");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA CEPILLOS*/
 INSERT INTO `Products` VALUES (72, 150.00, "Cepillos", "http://www.vertimania.com/images/P/super-8-440.jpg", "FlexEx Bandas Dedos");
 INSERT INTO `Products` VALUES (73, 250.00, "Cepillos", "http://www.vertimania.com/images/P/super-8-440.jpg", "Cepillos");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA GUANTES*/
-INSERT INTO `Products` VALUES (74, 485.00, "Guantes", "http://exposure.mx/images/productos/154-0-Crag-glove.JPG", "Guantes Crag Slove");
-INSERT INTO `Products` VALUES (75, 999.00, "Guantes", "http://exposure.mx/images/productos/455-0-Stone.JPG", "Stone");
+INSERT INTO `Products` VALUES (74, 485.00, "Guantes", "http://exposure.mx/images/productos/154-0-Crag-glove.JPG", "Crag Glove");
+INSERT INTO `Products` VALUES (75, 670.00, "Guantes", "http://exposure.mx/images/productos/455-0-Stone.JPG", "Stone Glove");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA CUERDAS*/
 INSERT INTO `Products` VALUES (76, 999.00, "Cuerdas", "http://exposure.mx/images/productos/342-0-Marathon-Pro-10-1mm-70m.JPG", "Marathon Pro x70m");
@@ -206,10 +200,14 @@ INSERT INTO `Products` VALUES (77, 999.00, "Cuerdas", "http://exposure.mx/images
 INSERT INTO `Products` VALUES (78, 999.00, "Cuerdas", "http://exposure.mx/images/productos/333-0-Canyon-Tech-9-5mm-61m.JPG", "Canyontech x61m");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MOCHILAS*/
-INSERT INTO `Products` VALUES (79, 999.00, "Mochilas", "http://exposure.mx/images/productos/112-0-Onyx-65.JPG", "ONYX 65");
-INSERT INTO `Products` VALUES (80, 999.00, "Mochilas", "http://exposure.mx/images/productos/106-0-Mercury-55.JPG", "Mercury 55");
-INSERT INTO `Products` VALUES (81, 970.00, "Mochilas", "http://exposure.mx/images/productos/125-0-Super-Chute.JPG", "Superchute");
+INSERT INTO `Products` VALUES (79, 4698.00, "Mochilas", "http://exposure.mx/images/productos/112-0-Onyx-65.JPG", "ONYX 65 Backpack");
+INSERT INTO `Products` VALUES (80, 4898.00, "Mochilas", "http://exposure.mx/images/productos/106-0-Mercury-55.JPG", "Mercury 55 Backpack");
+INSERT INTO `Products` VALUES (81, 970.00, "Mochilas", "https://blackdiamondequipment.com/on/demandware.static/-/Sites-bdel/default/dwd1ed655f/products/climbing_essentials/359998_CURR_Super_Chute_Rope_Bag_clsd_web.jpg", "Superchute Rope Bag - Amarillo");
+INSERT INTO `Products` VALUES (116, 970.00, "Mochilas", "http://exposure.mx/images/productos/125-0-Super-Chute.JPG", "Superchute Rope Bag - Verde");
+INSERT INTO `Products` VALUES (117, 970.00, "Mochilas", "http://exposure.mx/images/productos/125-2-Super-Chute.JPG", "Superchute Rope Bag - Rojo");
 INSERT INTO `Products` VALUES (82, 1598.00, "Mochilas", "http://exposure.mx/images/productos/454-0-Stone-42-Duffel.JPG", "Stone 42 Duffel");
+INSERT INTO `Products` VALUES (118, 1498.00, "Mochilas", "http://exposure.mx/images/productos/114-0-Magnum-20.JPG", "Magnum 20 Backpack");
+INSERT INTO `Products` VALUES (119, 1098.00, "Mochilas", "http://exposure.mx/images/productos/123-4-Bullet.JPG", "Bullet 16 Backpack");
 
 /*INSERTS PARA PRODUCTOS DE CATEGORIA MOSQUETONES*/
 INSERT INTO `Products` VALUES (83, 498.00, "Mosquetones", "http://exposure.mx/images/productos/31-0-Magnetron-RockLock.JPG", "Magnetron RockLock Carabiner");
@@ -243,3 +241,14 @@ INSERT INTO `Products` VALUES (105, 1390.00, "Fisura y Gran Pared", "http://expo
 INSERT INTO `Products` VALUES (106, 598.00, "Fisura y Gran Pared", "http://exposure.mx/images/productos/124-0-Dynex-Daisy-Chain.JPG", "12mm Dynex Daisy Chain 115cm");
 INSERT INTO `Products` VALUES (107, 698.00, "Fisura y Gran Pared", "http://exposure.mx/images/productos/124-0-Dynex-Daisy-Chain.JPG", "12mm Dynex Daisy Chain 140cm");
 INSERT INTO `Products` VALUES (108, 288.00, "Fisura y Gran Pared", "http://exposure.mx/images/productos/121-0-Nylon-Daisy-Chain.JPG", "18mm Nylon Daisy Chain 140cm");
+
+/*INSERTS PARA PRODUCTOS DE CATEGORIA BOULDER Y FERRATA*/
+INSERT INTO `Products` VALUES (109, 145.00, "Boulder y Ferrata", "http://exposure.mx/images/productos/81-0-Forearm-Trainer.JPG", "Forearm Trainer");
+
+/*INSERTS PARA PRODUCTOS DE CATEGORIA LAMPARAS*/
+INSERT INTO `Products` VALUES (110, 1098.00, "Lamparas", "http://exposure.mx/images/productos/61-0-Storm.JPG", "Storm Headlamp");
+INSERT INTO `Products` VALUES (111, 1298.00, "Lamparas", "http://exposure.mx/images/productos/63-0-ReVolt.JPG", "Revolt Headlamp");
+INSERT INTO `Products` VALUES (112, 698.00, "Lamparas", "http://exposure.mx/images/productos/64-0-Cosmo.JPG", "Cosmo Headlamp");
+INSERT INTO `Products` VALUES (113, 898.00, "Lamparas", "http://exposure.mx/images/productos/62-0-Spot.JPG", "Spot Headlamp");
+INSERT INTO `Products` VALUES (114, 998.00, "Lamparas", "http://exposure.mx/images/productos/467-0-Ember-Power-Light.JPG", "Ember Power Light");
+INSERT INTO `Products` VALUES (115, 898.00, "Lamparas", "http://exposure.mx/images/productos/69-0-Voyager.JPG", "Voyager Lantern Azul");
