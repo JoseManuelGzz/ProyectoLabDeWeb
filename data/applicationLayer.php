@@ -11,6 +11,10 @@
           break;
     case 'PRODUCTFILTER': productFilter();
           break;
+	case 'LOGOUT': logoutUser();
+		  break;
+	case 'GET_SESSION': getSession();
+		  break;
   }
 
   # Action to login the current user credentials and redirect it to home.html
@@ -29,7 +33,7 @@
 				$response = array('status' => 'COMPLETE', 'username' => $result['username']);
 
 				# Start the session
-				#startSession($email, $result['username']);
+				startSession($email, $result['username']);
 
 				echo json_encode($response);
 			}
@@ -61,7 +65,7 @@
 			if ($result['status'] == 'COMPLETE') {
 
 				# Start the session
-				#startSession($email, $username);
+				startSession($email, $username);
 
 				echo json_encode($result);
 			}
@@ -172,11 +176,26 @@
     # Action to get the current session data
     function getSession() {
     	session_start();
-    	if (isset($_SESSION['email']) && $_SESSION['username']) {
+    	if (isset($_SESSION['email']) && isset($_SESSION['username'])) {
     		echo json_encode(array("email" => $_SESSION['email'], "username" => $_SESSION['username']));
     	}
     	else {
-    		echo json_encode(errors(417));
+    		die(json_encode(errors(417)));
     	}
     }
+	
+	# Action to make logout
+	function logoutUser() {
+		session_start();
+		if (isset($_SESSION['email']) && isset($_SESSION['username'])) {
+			unset($_SESSION['email']);
+			unset($_SESSION['username']);
+			session_destroy();
+			
+			echo json_encode(array('success' => 'Session deleted'));
+    	}
+    	else {
+    		die(json_encode(errors(417)));
+    	}
+	}
 ?>
