@@ -11,14 +11,20 @@
           break;
     case 'PRODUCTFILTER': productFilter();
           break;
-	case 'LOGOUT': logoutUser();
-		  break;
-	case 'GET_SESSION': getSession();
-		  break;
-	case 'SET_COOKIE': cookieSet();
-	      break;
-	case 'GET_COOKIE': cookieGet();
-		  break;
+  	case 'LOGOUT': logoutUser();
+  		  break;
+  	case 'GET_SESSION': getSession();
+  		  break;
+  	case 'SET_COOKIE': cookieSet();
+  	      break;
+  	case 'GET_COOKIE': cookieGet();
+  		  break;
+    case 'ADD_FAVORITE': addToFavorites();
+        break;
+    case 'REMOVE_FAVORITE': removeFromFavorites();
+        break;
+    case 'DISPLAY_FAVORITES': displayFavorites();
+        break;
   }
 
   # Action to login the current user credentials and redirect it to home.html
@@ -187,7 +193,7 @@
     		die(json_encode(errors(417)));
     	}
     }
-	
+
 	# Action to make logout
 	function logoutUser() {
 		session_start();
@@ -195,7 +201,7 @@
 			unset($_SESSION['email']);
 			unset($_SESSION['username']);
 			session_destroy();
-			
+
 			echo json_encode(array('success' => 'Session deleted'));
     	}
     	else {

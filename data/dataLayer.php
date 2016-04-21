@@ -32,6 +32,10 @@
                         break;
 			case 417:	$header .= "417 No content set in the cookie/session";
 						break;
+      case 420: $header .= "420 Could not add the product as a favorite";
+            break;
+      case 423: $header .= "423 Could not remove the product from favorites";
+            break;
 			default:	$header .= "404 Request Not Found";
 		}
 
@@ -130,16 +134,16 @@
             else {
                 $sql = "SELECT * FROM Products WHERE category = '$category'";
             }
-            
+
   			$result = $conn->query($sql);
-            
+
             $response = array("message" => "OK");
 
   			while($row = $result->fetch_assoc()) {
   				array_push($response, array('price' => $row['price'],
                    'image_url' => $row['image_url'], 'name' => $row['name']));
   			}
-              
+
   			$conn->close();
   			return $response;
   		} else {
