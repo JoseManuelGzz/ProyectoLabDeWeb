@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var email = "";
-    
+
     $.ajax({
         type: "POST",
         url: "data/applicationLayer.php",
@@ -9,7 +9,7 @@ $(document).ready(function(){
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
         success: function(jsonData) {
             email = jsonData.email;
-            
+
             var navContent = '<li class="hidden"><a href="#page-top"></a></li>';
             navContent += '<li class="dropdown">';
             navContent += '<a class="page-scroll" href="#clases" data-toggle="dropdown">Clases</a>';
@@ -19,10 +19,10 @@ $(document).ready(function(){
             navContent += '<li><a href="escuelaDeIdiomas.html">Idiomas</a></li>';
             navContent += '<li><a href="escuelaDeMusica.html">Musica</a></li></ul></li>';
             navContent += '<li><a class="" href="favoritos.html">Favoritos</a></li>';
-            navContent += '<li><a id="logoutButton" class="">Logout</a></li>'           
-            
+            navContent += '<li><a id="logoutButton" class="">Logout</a></li>'
+
             $("#navBar").html(navContent);
-            
+
             $("#logoutButton").on("click", function() {
                 $.ajax({
                     type: "POST",
@@ -43,7 +43,7 @@ $(document).ready(function(){
             console.log(errorMsg.statusText);
         }
     });
-    
+
     $.ajax({
         type: "POST",
         url: "data/applicationLayer.php",
@@ -69,10 +69,10 @@ $(document).ready(function(){
             }
             productos += "</div>";
             $("#divProductos").html(productos);
-            
+
             $(".addFavorites").on('click', function() {
                 var productName = $(this).parent().parent().parent().parent().children().first().html();
-                
+
                 if(email === "") {
                     alert("You have to login first to add a favorite.");
                 }
@@ -84,10 +84,14 @@ $(document).ready(function(){
                         data: {'action': 'ADD_FAVORITE', 'product': productName, 'email': email},
                         headers: {"Content-Type": "application/x-www-form-urlencoded"},
                         success: function(jsonData) {
-                            alert(jsonData.success);
+                            swal({
+                              title: "",
+                              text: jsonData.success,
+                              type: "success"
+                            });
                         },
                         error: function(errorMsg) {
-                            alert(errorMsg.statusText);
+                            swal("Oops...", errorMsg.statusText, "error");
                         }
                     });
                 }
@@ -97,11 +101,11 @@ $(document).ready(function(){
             console.log(errorMsg.statusText);
         }
     });
-    
+
     $(".filtro").on("click", function() {
         var categoria = $(this).attr("id");
         var categoriaInterna = $(this).html();
-        
+
         $.ajax({
             type: "POST",
             url: "data/applicationLayer.php",
@@ -128,10 +132,10 @@ $(document).ready(function(){
                 }
                 productos += "</div>";
                 $("#divProductos").html(productos);
-                
+
                 $(".addFavorites").on('click', function() {
                     var productName = $(this).parent().parent().parent().parent().children().first().html();
-                    
+
                     if(email === "") {
                         alert("You have to login first to add a favorite.");
                     }

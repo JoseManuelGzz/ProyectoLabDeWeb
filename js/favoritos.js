@@ -46,14 +46,14 @@ $(document).ready(function(){
                             headers: {"Content-Type": "application/x-www-form-urlencoded"},
                             success: function(jsonData3) {
                                 swal({
-                                  title: jsonData3.success,
-                                  text: "You can favorite it again",
+                                  title: "Deleted!",
+                                  text: jsonData3.success,
                                   type: "success"
                                 },
                                 function(){window.location.reload();});
                             },
                             error: function(errorMsg) {
-                                alert(errorMsg.statusText);
+                                swal("Oops...", errorMsg.statusText, "error");
                             }
                         });
                     });
