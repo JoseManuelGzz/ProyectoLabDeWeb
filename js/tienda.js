@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    var email = "";
+    
     $.ajax({
         type: "POST",
         url: "data/applicationLayer.php",
@@ -6,6 +8,8 @@ $(document).ready(function(){
         data: {'action': 'GET_SESSION'},
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
         success: function(jsonData) {
+            email = jsonData.email;
+            
             var navContent = '<li class="hidden"><a href="#page-top"></a></li>';
             navContent += '<li class="dropdown">';
             navContent += '<a class="page-scroll" href="#clases" data-toggle="dropdown">Clases</a>';
@@ -58,13 +62,36 @@ $(document).ready(function(){
      				productos += "<p><span class=\"rupees\">$" + jsonData[key].price + "</span></p>";
      				productos += "</div>";
                     productos += "<div class=\"add-fav\">";
-                    productos += "<h4><a href=\"\"> Add to Favorites </a></h4>";
+                    productos += "<h4><a class=\"addFavorites\"> Add to Favorites </a></h4>";
                     productos += "</div>";
                     productos += "<div class=\"clear\"></div></div></div>";
                 }
             }
             productos += "</div>";
             $("#divProductos").html(productos);
+            
+            $(".addFavorites").on('click', function() {
+                var productName = $(this).parent().parent().parent().parent().children().first().html();
+                
+                if(email === "") {
+                    alert("You have to login first to add a favorite.");
+                }
+                else {
+                    $.ajax({
+                        type: "POST",
+                        url: "data/applicationLayer.php",
+                        dataType: "json",
+                        data: {'action': 'ADD_FAVORITE', 'product': productName, 'email': email},
+                        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                        success: function(jsonData) {
+                            alert(jsonData.success);
+                        },
+                        error: function(errorMsg) {
+                            alert(errorMsg.statusText);
+                        }
+                    });
+                }
+            });
         },
         error: function(errorMsg) {
             console.log(errorMsg.statusText);
