@@ -66,9 +66,9 @@ h5 {
   background-color: #ffffff;
   border: 3px solid #eaeaea;
   border-radius: 5px;
-  position: absolute;
-  top: 245px;
-  right: 300px;
+  position: relative;
+  top: -495px;
+  right: -230px;
 }
 
 .form-register button {
@@ -81,10 +81,15 @@ h5 {
   position: relative;
   left: 70px;
   bottom: 5px;
+  transform: scale(0.5);
 }
 
 #recuerdame {
   position: relative;
   left: -50px;
   top: -40px;
+}
+
+header {
+  max-height: 1150px;
 }
