@@ -32,10 +32,10 @@
                         break;
 			case 417:	$header .= "417 No content set in the cookie/session";
 						break;
-      case 420: $header .= "420 Could not add the product as a favorite";
-            break;
-      case 423: $header .= "423 Could not remove the product from favorites";
-            break;
+			case 420: 	$header .= "420 Could not add the product as a favorite";
+						break;
+			case 423: 	$header .= "423 Could not remove the product from favorites";
+						break;
 			default:	$header .= "404 Request Not Found";
 		}
 
@@ -151,4 +151,75 @@
   			return errors(315);
   		}
     }
+	
+	function getFavorites($email) {
+		$conn = connect();
+
+  		if($conn != null) {
+            $sql = "SELECT P.name, P.price, P.category, P.image_url FROM Products P, Favorites F WHERE P.id = F.product_id AND'$email' = F.user_email";
+
+  			$result = $conn->query($sql);
+
+  			if ($result->num_rows > 0) {
+				
+				$response = array('status' => 'COMPLETE');
+				
+				while($row = $result->fetch_assoc()) {
+					array_push($response, array('name' => $row['name'], 'price' => $row['price'], 'category' => $row['category'], 'url' => $row['image_url']));
+				}
+				
+				$conn->close();
+				return $response;
+			}
+			else {
+				$conn->close();
+				return errors(315);
+			}
+  		}
+		else {
+  			$conn->close();
+  			return errors(500);
+  		}
+	}
+	
+	function addFavorite($email, $product) {
+		$conn = connect();
+
+        if ($conn != null)
+        {
+			$sql = "SELECT id FROM Products WHERE name = '$product'";
+
+  			$result = $conn->query($sql);
+
+  			if ($result->num_rows > 0) {
+				$row = $result -> fetch_assoc();
+				
+				$id = $row['id'];
+				
+				$sql = "INSERT INTO Favorites(user_email, product_id) VALUES ('$email', '$id')";
+				
+				if (mysqli_query($conn, $sql))
+				{
+					$conn->close();
+					return array("status" => "COMPLETE");
+				}
+				else
+				{
+					$conn->close();
+					return errors(420);
+				}
+			}
+			else
+			{
+				$conn->close();
+				return errors(420);
+			}
+        }
+        else
+        {
+        	# Connection to Database was not successful
+        	$conn->close();
+        	return errors(500);
+        }
+	}
 ?>

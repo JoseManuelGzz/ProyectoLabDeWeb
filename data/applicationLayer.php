@@ -95,14 +95,14 @@
   function productFilter() {
     $category = $_POST['category'];
 
-		$result = getProducts($category);
+	$result = getProducts($category);
 
     if ($result['message'] == 'OK') {
-			echo json_encode($result);
-		} else {
-			header($result['header']);
-			die(json_encode($result));
-		}
+		echo json_encode($result);
+	} else {
+		header($result['header']);
+		die(json_encode($result));
+	}
   }
 
     # Action to encrypt the password of the user
@@ -207,5 +207,38 @@
     	else {
     		die(json_encode(errors(417)));
     	}
+	}
+	
+	# Action to get favorites
+	function displayFavorites() {
+		$email = $_POST['email'];
+		
+		# Get favorites from database
+		$result = getFavorites($email);
+
+		if ($result['status'] == 'COMPLETE') {
+			echo json_encode($result);
+		}
+		else {
+			# Couldn't get favorites
+			die(json_encode($result));
+		}
+	}
+	
+	# Action to add a favorite
+	function addToFavorites() {
+		$email = $_POST['email'];
+		$product = $_POST['product'];
+
+		$result = addFavorite($email, $product);
+
+		if ($result['status'] == 'COMPLETE') {
+			echo(json_encode(array('success' => 'Favorite correctly added')));
+		}
+		else
+		{
+			# Username already exists
+			die(json_encode($result));
+		}
 	}
 ?>
