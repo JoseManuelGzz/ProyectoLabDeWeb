@@ -7,6 +7,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     left: 0%;
 }
 
+.cart_quantity_delete:hover {
+    cursor: pointer;
+}
+
 section {
   padding: 100px 100px;
 }

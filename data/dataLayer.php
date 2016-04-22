@@ -222,4 +222,45 @@
         	return errors(500);
         }
 	}
+	
+	function removeFavorite($email, $product) {
+		$conn = connect();
+
+        if ($conn != null)
+        {
+			$sql = "SELECT id FROM Products WHERE name = '$product'";
+
+  			$result = $conn->query($sql);
+
+  			if ($result->num_rows > 0) {
+				$row = $result -> fetch_assoc();
+				
+				$id = $row['id'];
+				
+				$sql = "DELETE FROM Favorites WHERE user_email = '$email' AND product_id = '$id'";
+				
+				if ($conn->query($sql) === TRUE)
+				{
+					$conn->close();
+					return array("status" => "COMPLETE");
+				}
+				else
+				{
+					$conn->close();
+					return errors(423);
+				}
+			}
+			else
+			{
+				$conn->close();
+				return errors(423);
+			}
+        }
+        else
+        {
+        	# Connection to Database was not successful
+        	$conn->close();
+        	return errors(500);
+        }
+	}
 ?>

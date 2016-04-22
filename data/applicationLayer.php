@@ -241,4 +241,21 @@
 			die(json_encode($result));
 		}
 	}
+	
+	# Action to remove a favorite
+	function removeFromFavorites() {
+		$email = $_POST['email'];
+		$product = $_POST['product'];
+
+		$result = removeFavorite($email, $product);
+
+		if ($result['status'] == 'COMPLETE') {
+			echo(json_encode(array('success' => 'Product correctly removed from favorites.')));
+		}
+		else
+		{
+			# Username already exists
+			die(json_encode($result));
+		}
+	}
 ?>
