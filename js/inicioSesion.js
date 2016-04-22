@@ -12,7 +12,7 @@ $(document).ready(function() {
             console.log(errorMsg.statusText);
         }
     });
-	
+
 	$.ajax({
         type: "POST",
         url: "data/applicationLayer.php",
@@ -26,7 +26,7 @@ $(document).ready(function() {
             console.log(errorMsg.statusText);
         }
     });
-	
+
     // Function when the login button is clicked.
 	$("#signInButton").on("click", function() {
 
@@ -60,7 +60,7 @@ $(document).ready(function() {
 						}
 					});
 				}
-				
+
 				alert("Welcome " + jsonData.username + "!");
 				window.location.replace('tienda.html');
 			},
