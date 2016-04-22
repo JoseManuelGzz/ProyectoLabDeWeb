@@ -7,7 +7,7 @@ $(document).ready(function(){
         headers: {"Content-Type": "application/x-www-form-urlencoded"},
         success: function(jsonData) {
             $("#tablaFavoritos > tbody").html("");
-            
+
             $.ajax({
                 type: "POST",
                 url: "data/applicationLayer.php",
@@ -16,7 +16,7 @@ $(document).ready(function(){
                 headers: {"Content-Type": "application/x-www-form-urlencoded"},
                 success: function(jsonData2) {
                     var tabla = "";
-                    
+
                     for(var key in jsonData2) {
                         if(jsonData2[key] !== "COMPLETE") {
                             tabla += '<tr id="' + jsonData2[key].name + '">';
@@ -32,12 +32,12 @@ $(document).ready(function(){
                             tabla += '</tr>';
                         }
                     }
-                    
+
                     $("#tablaFavoritos > tbody").html(tabla);
-                    
+
                     $(".cart_quantity_delete").on("click", function() {
                         var productName = $(this).parent().parent().children().first().next().children().first().html();
-                        
+
                         $.ajax({
                             type: "POST",
                             url: "data/applicationLayer.php",
@@ -45,9 +45,12 @@ $(document).ready(function(){
                             data: {'action': 'REMOVE_FAVORITE', 'email': jsonData.email, 'product': productName},
                             headers: {"Content-Type": "application/x-www-form-urlencoded"},
                             success: function(jsonData3) {
-                                alert(jsonData3.success);
-                                
-                                window.location.reload();
+                                swal({
+                                  title: jsonData3.success,
+                                  text: "You can favorite it again",
+                                  type: "success"
+                                },
+                                function(){window.location.reload();});
                             },
                             error: function(errorMsg) {
                                 alert(errorMsg.statusText);
@@ -63,5 +66,5 @@ $(document).ready(function(){
         error: function(errorMsg) {
             window.location.href = "tienda.html";
         }
-    });   
+    });
 });
