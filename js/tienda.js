@@ -121,13 +121,36 @@ $(document).ready(function(){
                         productos += "<p><span class=\"rupees\">$" + jsonData[key].price + "</span></p>";
                         productos += "</div>";
                         productos += "<div class=\"add-fav\">";
-                        productos += "<h4><a href=\"\"> Add to Favorites </a></h4>";
+                        productos += "<h4><a class=\"addFavorites\" href=\"\"> Add to Favorites </a></h4>";
                         productos += "</div>";
                         productos += "<div class=\"clear\"></div></div></div>";
                     }
                 }
                 productos += "</div>";
                 $("#divProductos").html(productos);
+
+                            $(".addFavorites").on('click', function() {
+                var productName = $(this).parent().parent().parent().parent().children().first().html();
+                
+                if(email === "") {
+                    alert("You have to login first to add a favorite.");
+                }
+                else {
+                    $.ajax({
+                        type: "POST",
+                        url: "data/applicationLayer.php",
+                        dataType: "json",
+                        data: {'action': 'ADD_FAVORITE', 'product': productName, 'email': email},
+                        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                        success: function(jsonData) {
+                            alert("exito");
+                        },
+                        error: function(errorMsg) {
+                            alert("falso");
+                        }
+                    });
+                }
+            });
             },
             error: function(errorMsg) {
                 console.log(errorMsg.statusText);
