@@ -11,6 +11,15 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     cursor: pointer;
 }
 
+.cart_quantity_up:hover {
+    cursor: pointer;
+}
+
+.cart_quantity_down:hover {
+    cursor: pointer;
+}
+
+
 section {
   padding: 100px 100px;
 }
