@@ -61,11 +61,16 @@ $(document).ready(function() {
 					});
 				}
 
-				alert("Welcome " + jsonData.username + "!");
-				window.location.replace('tienda.html');
+				swal({
+					title: "Login successful!",
+					text: "Welcome " + jsonData.username + "!",
+					type: "success"
+					},
+					function(){window.location.replace('tienda.html');
+				});
 			},
 			error: function(errorMsg) {
-				alert(errorMsg.statusText);
+				swal("Oops...", errorMsg.statusText, "error");
 			}
 		});
     });
@@ -129,11 +134,16 @@ $(document).ready(function() {
 				data: jsonObject,
 				headers: {"Content-Type": "application/x-www-form-urlencoded"},
 				success: function(jsonData) {
-					alert("Welcome " + username + "!");
-					window.location.replace('tienda.html');
+					swal({
+						title: "Login successful!",
+						text: "Welcome " + jsonData.username + "!",
+						type: "success"
+						},
+						function(){window.location.replace('tienda.html');
+					});
 				},
 				error: function(errorMsg) {
-					alert(errorMsg.statusText);
+					swal("Oops...", errorMsg.statusText, "error");
 				}
 			});
 		}

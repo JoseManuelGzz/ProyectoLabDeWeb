@@ -74,7 +74,7 @@ $(document).ready(function(){
                 var productName = $(this).parent().parent().parent().parent().children().first().html();
 
                 if(email === "") {
-                    alert("You have to login first to add a favorite.");
+                    swal("Oops...", "You have to login first to add a favorite.", "error");
                 }
                 else {
                     $.ajax({
@@ -137,7 +137,7 @@ $(document).ready(function(){
                     var productName = $(this).parent().parent().parent().parent().children().first().html();
 
                     if(email === "") {
-                        alert("You have to login first to add a favorite.");
+                        swal("Oops...", "You have to login first to add a favorite.", "error");
                     }
                     else {
                         $.ajax({
@@ -147,10 +147,14 @@ $(document).ready(function(){
                             data: {'action': 'ADD_FAVORITE', 'product': productName, 'email': email},
                             headers: {"Content-Type": "application/x-www-form-urlencoded"},
                             success: function(jsonData) {
-                                alert(jsonData.success);
+                                swal({
+                                title: "",
+                                text: jsonData.success,
+                                type: "success"
+                                });
                             },
                             error: function(errorMsg) {
-                                alert(errorMsg.statusText);
+                                swal("Oops...", errorMsg.statusText, "error");
                             }
                         });
                     }
