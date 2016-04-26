@@ -24,9 +24,9 @@ $(document).ready(function(){
                             tabla += '<td class="cart_description"><h4>' + jsonData2[key].name + '</h4><p>' + jsonData2[key].category + '</p></td>';
                             tabla += '<td class="cart_price"><p>$' + jsonData2[key].price + '</p></td>';
                             tabla += '<td class="cart_quantity"><div class="cart_quantity_button">';
-                            tabla += '<a class="cart_quantity_up" href=""> + </a>';
+                            tabla += '<a class="cart_quantity_up"> + </a>';
                             tabla += '<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">';
-						    tabla += '<a class="cart_quantity_down" href=""> - </a></div></td>';
+						    tabla += '<a class="cart_quantity_down"> - </a></div></td>';
                             tabla += '<td class="cart_total"><p class="cart_total_price">' + jsonData2[key].price + '</p></td>';
                             tabla += '<td class="cart_delete"><a class="cart_quantity_delete"><i class="fa fa-times"></i></a></td>';
                             tabla += '</tr>';
@@ -34,6 +34,32 @@ $(document).ready(function(){
                     }
 
                     $("#tablaFavoritos > tbody").html(tabla);
+                    $(".cart_quantity_up").on("click", function() {
+                         var  algo = $(".cart_quantity_input").val();
+                         var precio = $(".cart_total_price").html();
+                         precio = parseInt(precio);
+                         algo = parseInt(algo);
+                         precio = precio / algo;
+                         algo = algo +1;
+                         $(".cart_quantity_input").val(algo);
+                         precio = precio * algo;
+                         $(".cart_total_price").html(precio);
+                    });
+
+                    $(".cart_quantity_down").on("click", function() {
+                         var  algo = $(".cart_quantity_input").val();
+                         var precio = $(".cart_total_price").html();
+                         precio = parseInt(precio);
+                         algo = parseInt(algo);
+                         precio = precio / algo;
+                         if(algo > 1){
+                            algo = algo - 1;
+                         }
+
+                         $(".cart_quantity_input").val(algo);
+                         precio = precio * algo;
+                         $(".cart_total_price").html(precio);
+                    });
 
                     $(".cart_quantity_delete").on("click", function() {
                         var productName = $(this).parent().parent().children().first().next().children().first().html();
