@@ -25,8 +25,24 @@
         break;
     case 'DISPLAY_FAVORITES': displayFavorites();
         break;
+    case 'PREVIEW': placePreview();
+    	break;
   }
 
+
+	function placePreview(){
+		#{'nameP': name, 'imageP':imgurl, 'priceP': price };
+		$name = $_POST['nameP'];
+		$image = $_POST['imageP'];
+		$price = $_POST['priceP'];
+
+		if($name !=null && $image != null && $price != null){
+			$response = $arrayName = array('status' =>'COMPLETE' ,'name' => $name, 'image' => $image, 'price' => $price );
+			echo json_encode($response);
+		} else {
+			die(json_encode(errors(306)));
+		}
+	} 
   # Action to login the current user credentials and redirect it to home.html
 	function loginUser() {
 		$email = $_POST['email'];

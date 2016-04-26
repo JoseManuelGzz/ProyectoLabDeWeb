@@ -55,8 +55,8 @@ $(document).ready(function(){
             for(var key in jsonData) {
                 if(jsonData[key] !== "OK") {
                     productos += "<div class=\"col-sm-3 producto\">";
-                    productos += "<h4>" + jsonData[key].name + "</h4>";
-                    productos += "<a href=\"preview.html\"><img src=\"" + jsonData[key].image_url + "\" alt=\"\" /></a>";
+                    productos += "<h4 class =\" prodName\">" + jsonData[key].name + "</h4>";
+                    productos += "<a class=\"prevClass\" href=\"preview.html\"><img src=\"" + jsonData[key].image_url + "\" alt=\"\" /></a>";
                     productos += "<div class=\"price-details\">";
                     productos += "<div class=\"price-number\">";
      				productos += "<p><span class=\"rupees\">$" + jsonData[key].price + "</span></p>";
@@ -69,6 +69,28 @@ $(document).ready(function(){
             }
             productos += "</div>";
             $("#divProductos").html(productos);
+
+            $(".prevClass").on('click' , function ()  {
+                var name = $(this).siblings(".prodName").html();
+                var imgurl = $(this).siblings(".prevClass").html();
+                var price = $(this).siblings(".rupees").html();
+                var jsonP = {'nameP': name, 'imageP':imgurl, 'priceP': price };
+                $.ajax({
+                    type: "POST",
+                    url: "data/applicationLayer.php",
+                    dataType: "json",
+                    data: jsonP,
+                    headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                    success: function(jsonData) {
+
+                    }, 
+                    failure: function(){
+
+                    }
+                });
+
+
+            });
 
             $(".addFavorites").on('click', function() {
                 var productName = $(this).parent().parent().parent().parent().children().first().html();
@@ -119,7 +141,7 @@ $(document).ready(function(){
                     if(jsonData[key] !== "OK") {
                         productos += "<div class=\"col-sm-3 producto\">";
                         productos += "<h4>" + jsonData[key].name + "</h4>";
-                        productos += "<a href=\"preview.html\"><img src=\"" + jsonData[key].image_url + "\" alt=\"\" /></a>";
+                        productos += "<a  class=\"prevClass\" href=\"preview.html\"><img src=\"" + jsonData[key].image_url + "\" alt=\"\" /></a>";
                         productos += "<div class=\"price-details\">";
                         productos += "<div class=\"price-number\">";
                         productos += "<p><span class=\"rupees\">$" + jsonData[key].price + "</span></p>";
@@ -132,6 +154,26 @@ $(document).ready(function(){
                 }
                 productos += "</div>";
                 $("#divProductos").html(productos);
+
+                 $(".prevClass").on('click' , function ()  {
+                    var name = $(this).siblings(".prodName").html();
+                    var imgurl = $(this).siblings(".prevClass").html();
+                    var price = $(this).siblings(".rupees").html();
+                    var jsonP = {'nameP': name, 'imageP':imgurl, 'priceP': price };
+                    $.ajax({
+                        type: "POST",
+                        url: "data/applicationLayer.php",
+                        dataType: "json",
+                        data: jsonP,
+                        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                        success: function(jsonData) {
+
+                        }, 
+                        failure: function(){
+
+                        }
+                    });
+                });
 
                 $(".addFavorites").on('click', function() {
                     var productName = $(this).parent().parent().parent().parent().children().first().html();
