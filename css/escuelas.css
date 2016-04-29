@@ -27,6 +27,10 @@
 }
 */
 
+.about-text {
+  text-align: justify;
+}
+
 .thumbnail {
     border: 0 none;
     box-shadow: none;
