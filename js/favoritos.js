@@ -35,30 +35,27 @@ $(document).ready(function(){
 
                     $("#tablaFavoritos > tbody").html(tabla);
                     $(".cart_quantity_up").on("click", function() {
-                         var  algo = $(".cart_quantity_input").val();
-                         var precio = $(".cart_total_price").html();
-                         precio = parseInt(precio);
+                         var algo = $(this).parent().children()[1].value;
+                         var precio = $(this).parent().parent().parent().children()[2].childNodes[0].innerHTML;
+                         precio = precio.substring(1, precio.length);
+                         precio = parseFloat(precio);
                          algo = parseInt(algo);
-                         precio = precio / algo;
-                         algo = algo +1;
-                         $(".cart_quantity_input").val(algo);
-                         precio = precio * algo;
-                         $(".cart_total_price").html(precio);
+                         algo = algo + 1;
+                         $(this).parent().children()[1].value = algo;
+                         $(this).parent().parent().parent().children()[4].childNodes[0].innerHTML = precio * algo;
                     });
 
                     $(".cart_quantity_down").on("click", function() {
-                         var  algo = $(".cart_quantity_input").val();
-                         var precio = $(".cart_total_price").html();
-                         precio = parseInt(precio);
+                         var algo = $(this).parent().children()[1].value;
+                         var precio = $(this).parent().parent().parent().children()[2].childNodes[0].innerHTML;
+                         precio = precio.substring(1, precio.length);
+                         precio = parseFloat(precio);
                          algo = parseInt(algo);
-                         precio = precio / algo;
                          if(algo > 1){
                             algo = algo - 1;
                          }
-
-                         $(".cart_quantity_input").val(algo);
-                         precio = precio * algo;
-                         $(".cart_total_price").html(precio);
+                         $(this).parent().children()[1].value = algo;
+                         $(this).parent().parent().parent().children()[4].childNodes[0].innerHTML = precio * algo;
                     });
 
                     $(".cart_quantity_delete").on("click", function() {
