@@ -25,10 +25,40 @@
         break;
     case 'DISPLAY_FAVORITES': displayFavorites();
         break;
+    case 'SETPREVIEW' : setPreview();
+    	break;
+    case 'PREVIEW' : placePreview();
+    	break;
   }
 
+   function placePreview()
+   {
+   	if (isset($_COOKIE['nameP']))
+   	{
+   	 	$nameP = $_COOKIE['nameP'];
+   	} else {
+   		$nameP = "M5";
+   	}
+
+   	$result = getPreview ($nameP);
+    if ($result['message'] == 'OK') {
+		echo json_encode($result);
+	} else {
+		header($result['header']);
+		die(json_encode($result));
+	}
+
+   }
+
+  function setPreview()
+  {
+  		$nameP = $_POST["nameP"];
+		setcookie("nameP", $nameP, time() + 3600*24*60);
+		echo json_encode(array("message" => "OK"));
+  }
   # Action to login the current user credentials and redirect it to home.html
-	function loginUser() {
+	function loginUser() 
+	{
 		$email = $_POST['email'];
 		$password = $_POST['password'];
 

@@ -104,7 +104,7 @@
 
         if ($conn != null)
         {
-        	$sql = "INSERT INTO Users(Email, Username, Password) VALUES ('$email', '$username', '$password')";
+        	$sql = "INSERT INTO Users (Email, Username, Password) VALUES ('$email', '$username', '$password')";
 			if (mysqli_query($conn, $sql))
 	    	{
 	    		$conn->close();
@@ -135,7 +135,7 @@
                 $sql = "SELECT * FROM Products WHERE category = '$category'";
             }
 
-  			$result = $conn->query($sql);
+  			$result = $conn->query ($sql);
 
             $response = array("message" => "OK");
 
@@ -150,6 +150,25 @@
   			$conn->close();
   			return errors(315);
   		}
+    }
+
+    function getPreview($name) {
+    	$conn = connect();
+    	if($conn !=null) {
+    		$sql = "SELECT * FROM Products WHERE name = '$name'";
+    		$result = $conn->query ($sql);
+    		$response = array ('message' => "OK");
+    		$row = $result->fetch_assoc();
+  				array_push($response, array('price' => $row['price'],
+                   'image_url' => $row['image_url'], 'name' => $row['name'], 'category' => $row['category']));
+  			
+  			$conn -> close();
+  			return $response;
+    	}
+    	else {
+    		$conn -> close();
+    		return errors (315);
+    	}
     }
 	
 	function getFavorites($email) {
