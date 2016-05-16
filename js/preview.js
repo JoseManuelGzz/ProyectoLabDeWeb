@@ -2,8 +2,8 @@ $(document).ready(function(){
 $("#Backbutton").on("click", function() {
 	window.location.replace('tienda.html');
 	});
-              
-                    
+
+
                     $.ajax({
                         type: "POST",
                         url: "data/applicationLayer.php",
@@ -20,12 +20,12 @@ $("#Backbutton").on("click", function() {
                         		}
                         	}
 
-                        }, 
-                        error: function (errorMsg) {
-                            alert("Oops..." +  "error");
+                        },
+												error: function (errorMsg) {
+                            swal("Oops...", errorMsg.statusText, "error");
                         }
 
                     });
-                
+
 
 });

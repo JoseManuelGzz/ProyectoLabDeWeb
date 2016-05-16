@@ -143,7 +143,7 @@ $(document).ready(function(){
                         headers: {"Content-Type": "application/x-www-form-urlencoded"},
                         success: function() {
                             window.location.replace('preview.html');
-                        }, 
+                        },
                         error: function (errorMsg) {
                             swal("Oops...", errorMsg.statusText, "error");
                         }
