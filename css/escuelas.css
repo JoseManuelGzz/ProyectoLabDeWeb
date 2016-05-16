@@ -47,6 +47,19 @@ section .section-heading {
     margin-bottom: 0 !important;
 }
 
+.carousel {
+      background: url(http://placehold.it/620x420/000000/000000);
+      position: relative;
+      padding: 0px;     /* Shows as a border around the carousel */
+      border-radius: 10px;
+      width: 90%;
+      margin: auto;
+}
+
+.carousel .carousel-inner {
+      height: 400px;
+      margin: auto;
+}
 
 .carousel-indicators li {
   background: #C4C4BE;
@@ -89,9 +102,9 @@ section .section-heading {
 
 @media (min-width:992px){
   .control-carousel.left {
-    margin-left: 100px;
+    margin-left: 50px;
   }
 
   .control-carousel.right {
-    margin-right: 100px;
+    margin-right: 50px;
 }

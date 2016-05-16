@@ -427,7 +427,9 @@ section h3.section-subheading{
 }
 .team-member img{
   margin:0 auto;
-  border:7px solid #fff
+  border:7px solid #fff;
+  height: 225px;
+  width: 225px;
 }
 .team-member h4{
   margin-top:25px;

@@ -23,6 +23,10 @@
     <!-- Escuela de Yoga CSS -->
     <link href="css/escuelas.css" rel="stylesheet">
 
+    <!-- Custom for modal gallery -->
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -112,15 +116,21 @@
     						</ol>
 
                   <div class="carousel-inner" role="listbox">
-                      <div class="item active">
-                          <img src="img/ClimbingBG1.jpg" alt="Background1"/>
-                      </div>
-                      <div class="item">
-                          <img src="img/ClimbingBG2.jpg" alt="Background2"/>
-                      </div>
-                      <div class="item">
-                          <img src="img/ClimbingBG1.jpg" alt="Background1"/>
-                      </div>
+                    <div class="item active">
+                      <a href="img/Eventos/Escalada/PrimerEvento.jpg" title="Copa Norte 2016 - 2da Etapa" class="" data-gallery="#blueimp-gallery-events">
+                          <img src="img/Eventos/Escalada/PrimerEvento.jpg" alt="Event1"/>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="https://www.youtube.com/watch?v=XGpsd9Z1-OA" type="text/html" data-youtube="XGpsd9Z1-OA" data-poster="http://img.youtube.com/vi/XGpsd9Z1-OA/0.jpg" title="Copa Norte 2016 - 1a Etapa" data-gallery="#blueimp-gallery-events">
+                          <img src="img/Eventos/Escalada/SegundoEvento.jpg" alt="Background1"/>
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="https://www.youtube.com/watch?v=JlTAC-Y0VQo" type="text/html" data-youtube="JlTAC-Y0VQo" data-poster="http://img.youtube.com/vi/JlTAC-Y0VQo/0.jpg" title="Campeonato Regional de Boulder 2015" data-gallery="#blueimp-gallery-events">
+                          <img src="img/Eventos/Escalada/TercerEvento.jpg" alt="Background1"/>
+                      </a>
+                    </div>
                   </div>
 
                   <a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
@@ -133,6 +143,34 @@
             </div>
         </div>
     </section>
+
+    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div id="blueimp-gallery-events" class="blueimp-gallery blueimp-gallery-controls">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Clases y horarios section -->
     <section id="clases" class="full-background filter-gradient gray" style="background-image:url('img/ClimbingBG2.jpg');">
@@ -155,9 +193,15 @@
                       <br>
                       <h4>Escalada en muro</h4>
                       <p class="">Clases de escalada en muro artificial. Ven y entrena con el método organic y resuelve todos los boulders posibles</p>
+                      <div class="col-xs-3 text-right">Niveles:</div>
+                      <div class="col-xs-9"> Todos </div>
+                      <br>
                       <br>
                       <h4>Escalada en roca</h4>
-                      <p class="">Acompañanos los domingos a escalar en la huasteca, ofrecemos cursos desde principiantes hasta entrenamientos para los mas avanzados</p>
+                      <p class="">Acompañanos los domingos a escalar en la huasteca, ofrecemos cursos desde principiantes hasta entrenamientos para los mas avanzados. 1 sesión dura de 3 a 4 horas en fin de semana.</p>
+                        <div class="col-xs-3 text-right">Niveles:</div>
+                        <div class="col-xs-9"> Intro: 4 clases <br> N1YOYO: 10 clases <br> N2PUNTA: 12 clases <br></div>
+                        <div class="col-xs-12"><h6 style="text-align: justify"><br>Otros cursos ver costo y fechas disponibles para : <br>Rapel, Multi largos, Armado y equipamiento de rutas, Monitor de muro de escalada, Entrenamiento en escalada deportiva, armado de rutas y bloque en muro.</h6></div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -169,19 +213,26 @@
                     <h2 class="service-heading fb-text">Horarios</h2>
                     </div>
                     <div class="fb-text">
-                      <h4> Apertura para entrenamiento libre: </h4>
-                      <p>
-                        Lunes a jueves de 3:00pm a 11:00pm <br>
-                        Viernes de 3:00 a 10:00pm  y sábados de 9:00 a 5:00pm
-                      </p>
                       <br>
-                      <h4> Grupos especiales de entrenamiento: </h4>
-                      <p>
-                        Jóvenes y adultos:  6:00am (M, M,J), 7:00am (L,M,M,J,V)  12:00pm (L, M, V), 7:00pm (L,M,Mi,J) <br>
-                        NIÑOS: 3:00pm (Lunes y Miércoles) y 5:00pm (Martes  y Jueves)
-                      </p>
-                      <br>
+                      <h4 class="col-xs-12 text-center">Entrenamiento Libre:</h4>
+                      <div class="col-xs-6 text-right">Lunes a Jueves</div>
+                      <div class="col-xs-6 text-left"> 3:00pm a 11:00pm </div>
+                      <div class="col-xs-6 text-right">Viernes</div>
+                      <div class="col-xs-6 text-left"> 3:00 a 10:00pm </div>
+                      <div class="col-xs-6 text-right">Sabados</div>
+                      <div class="col-xs-6 text-left"> 9:00 a 5:00pm </div>
 
+                      <h4 class="col-xs-12 text-center"><br><br>Grupos especiales de entrenamiento:</h4>
+                      <div class="col-xs-6 text-right">Jóvenes y Adultos</div>
+                      <div class="col-xs-6 text-left"> 6:00am (M, Mi,J) <br> 7:00am (L,M,Mi,J,V) <br> 12:00pm (L, Mi, V) <br> 7:00pm (L,M,Mi,J) </div>
+                      <div class="col-xs-6 text-right"><br>Niños</div>
+                      <div class="col-xs-6 text-left"> <br>3:00pm (Lunes y Miércoles) <br> 5:00pm (Martes  y Jueves) </div>
+
+                      <h4 class="col-xs-12 text-center"><br><br>Horarios Escalada en Roca:</h4>
+                      <div class="col-xs-6 text-right">Grupo Avanzado</div>
+                      <div class="col-xs-6 text-left"> Sábados 8:00 - 12:00 am </div>
+                      <div class="col-xs-6 text-right">Grupo en Formación</div>
+                      <div class="col-xs-6 text-left"> Domingos 8:00 - 12:00 am </div>
                     </div>
                 </div>
             </div>
@@ -197,12 +248,25 @@
                 </div>
             </div>
             <div class="row">
-              <div class="col-md-10 col-md-offset-1 text-center">
-                Costos cursos de escalada en roca: 1 sesión dura de 3 a 4 horas fin de semana <br>
-                Una sesión $350 <br>
-                Paquete de 10 sesiones (intro, N1 y N2) en roca $1990 <br>
-                Niveles: Intro 4clases, N1YOYO 10 clases, N2PUNTA 12 clases <br>
-                Otros cursos ver costo y fechas disponibles para : Rapel, Multi largos, Armado y equipamiento de rutas, Monitor de muro de escalada, Entrenamiento en escalada deportiva, armado de rutas y bloque en muro. <br>
+              <div class="col-md-6 col-md-offset-3" style="text-align: center">
+                <h5>Escalada en muro:</h5>
+                <div class="col-xs-6 text-right">Entrena libre 1 dia</div>
+                <div class="col-xs-6 text-left"> $90 </div>
+                <div class="col-xs-6 text-right">Clase 1 dia </div>
+                <div class="col-xs-6 text-left"> $150 </div>
+                <div class="col-xs-6 text-right">Mensualidad</div>
+                <div class="col-xs-6 text-left"> $600 </div>
+                <div class="col-xs-6 text-right">Semestre </div>
+                <div class="col-xs-6 text-left"> $2500 </div>
+                <div class="col-xs-6 text-right">Anualidad </div>
+                <div class="col-xs-6 text-left"> $4500 </div>
+              </div>
+              <div class="col-md-6 col-md-offset-3" style="text-align: center">
+                <h5><br>Escalada en roca:</h5>
+                <div class="col-xs-6 text-right">1 sesión</div>
+                <div class="col-xs-6 text-left"> $350 </div>
+                <div class="col-xs-6 text-right">10 sesiones </div>
+                <div class="col-xs-6 text-left"> $1990 </div>
               </div>
                 <div class="col-md-6 text-center">
                     <br>
@@ -229,10 +293,10 @@
           </div>
             <div class="row">
               <div class="col-sm-3 hidden-xs">
-                <a href="#aboutus" class="thumbnail">
+                <a href="img/logos/RocaLibre_b.jpg" class="thumbnail" data-gallery="#blueimp-gallery-aboutImgs">
                     <img src="img/logos/RocaLibre_b.jpg" alt="">
                 </a>
-                <a href="#aboutus" class="thumbnail">
+                <a href="img/Escalada/about_escalada_1.jpg" class="thumbnail" data-gallery="#blueimp-gallery-aboutImgs">
                     <img src="img/Escalada/about_escalada_1.jpg" alt="">
                 </a>
               </div>
@@ -243,16 +307,29 @@
                     <br><br> </p>
                 </div>
                 <div class="col-sm-3">
-                  <a href="#aboutus" class="thumbnail">
+                  <a href="img/Escalada/about_escalada_2.jpg" class="thumbnail" data-gallery="#blueimp-gallery-aboutImgs">
                       <img src="img/Escalada/about_escalada_2.jpg" alt="">
                   </a>
-                  <a href="#aboutus" class="thumbnail">
+                  <a href="img/Escalada/about_escalada_3.jpg" class="thumbnail" data-gallery="#blueimp-gallery-aboutImgs">
                       <img src="img/Escalada/about_escalada_3.jpg" alt="">
                   </a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- The Bootstrap Image Gallery lightbox -->
+    <div id="blueimp-gallery-aboutImgs" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
 
     <footer>
         <div class="container">
@@ -298,6 +375,10 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <!-- Custom fot modal gallery -->
+    <script src="js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
 
     <!-- Page Javascript -->
     <script>
