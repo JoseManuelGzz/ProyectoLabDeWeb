@@ -129,7 +129,8 @@
 
     if ($result['message'] == 'OK') {
 		echo json_encode($result);
-	} else {
+	}
+	else {
 		header($result['header']);
 		die(json_encode($result));
 	}

@@ -125,7 +125,7 @@
     }
 
     function getProducts($category) {
-      $conn = connect();
+      	$conn = connect();
 
   		if($conn != null) {
             if($category == 'Todas') {
@@ -141,7 +141,7 @@
 
   			while($row = $result->fetch_assoc()) {
   				array_push($response, array('price' => $row['price'],
-                   'image_url' => $row['image_url'], 'name' => $row['name']));
+                   'image_url' => $row['image_url'], 'name' => utf8_encode($row['name'])));
   			}
 
   			$conn->close();
