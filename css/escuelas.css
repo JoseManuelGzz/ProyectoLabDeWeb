@@ -2,7 +2,7 @@
   background-image:url(../img/idiomasPoster.jpg);
 }
 .climbingHeader{
-  background-image:url(../img/climbingPoster.jpg);
+  background-image:url(../img/escaladaPoster.jpg);
 }
 .yogaHeader{
   background-image:url(../img/yogaPoster.jpg);
@@ -48,12 +48,15 @@ section .section-heading {
 }
 
 .carousel {
-      background: url(http://placehold.it/620x420/000000/000000);
       position: relative;
       padding: 0px;     /* Shows as a border around the carousel */
       border-radius: 10px;
       width: 90%;
       margin: auto;
+}
+
+.carousel-climb {
+  background: url(http://placehold.it/620x420/000000/000000);
 }
 
 .carousel .carousel-inner {
