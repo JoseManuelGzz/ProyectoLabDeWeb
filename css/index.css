@@ -101,6 +101,11 @@ video {
       border-radius: 10px;
 }
 
+.carousel .carousel-inner {
+      height: 400px;
+      margin: auto auto;
+}
+
 .carousel-indicators li {
   background: #C4C4BE;
   border-color: #C4C4BE;

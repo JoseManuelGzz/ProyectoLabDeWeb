@@ -58,7 +58,7 @@ section .section-heading {
 
 .carousel .carousel-inner {
       height: 400px;
-      margin: auto;
+      margin: auto auto;
 }
 
 .carousel-indicators li {
